@@ -1,6 +1,6 @@
 .reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(18px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity var(--transition-base), transform var(--transition-base);
 }
 

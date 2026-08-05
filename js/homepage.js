@@ -1,9 +1,8 @@
 import { createElement, getCurrentPage } from './utils.js';
-import { hero, trustPartners, statistics, businessOutcomes, services, enterpriseExperiences, featuredProjects, technologyExpertise, whyCards, testimonials, latestArticles } from './homeData.js';
+import { trustPartners, statistics, businessOutcomes, services, featuredProjects, technologyExpertise, whyCards, testimonials, latestArticles } from './homeData.js';
 import { createServiceCard } from './components/serviceCard.js';
 import { createProjectCard } from './components/projectCard.js';
 import { createStatisticCard } from './components/statisticCard.js';
-import { createEnterpriseCard } from './components/enterpriseCard.js';
 import { createTestimonialCard } from './components/testimonialCard.js';
 import { createExpertiseBadge } from './components/expertiseBadge.js';
 import { createFeatureCard } from './components/featureCard.js';
@@ -15,7 +14,6 @@ export function initializeHomepage() {
   renderStatistics();
   renderBusinessOutcomes();
   renderServices();
-  renderEnterpriseExperience();
   renderFeaturedProjects();
   renderTechnologyExpertise();
   renderWhyWorkWithMe();
@@ -84,47 +82,6 @@ function renderServices() {
   if (!container) return;
   const grid = createElement('div', { className: 'section-grid grid-2' }, services.map((service) => createServiceCard(service)));
   container.appendChild(grid);
-}
-
-function renderEnterpriseExperience() {
-  const container = document.querySelector('[data-home-section="enterprise"]');
-  if (!container) return;
-  const grid = createElement('div', { className: 'section-grid grid-3' }, enterpriseExperiences.map((experience) => createEnterpriseCard(experience)));
-  container.appendChild(grid);
-  renderEnterpriseModals();
-}
-
-function renderEnterpriseModals() {
-  const root = document.querySelector('#modal-root');
-  if (!root) return;
-  enterpriseExperiences.forEach((experience) => {
-    const modal = createElement('div', { className: 'modal', 'data-modal': experience.id }, [
-      createElement('div', { className: 'modal-content' }, [
-        createElement('button', { className: 'modal-close', type: 'button', 'data-modal-close': 'true', 'aria-label': 'Close modal' }, ['×']),
-        createElement('h2', {}, [experience.company]),
-        createElement('p', { className: 'eyebrow-label' }, [experience.role]),
-        createElement('p', { className: 'modal-summary' }, [experience.summary]),
-        createElement('div', { className: 'modal-section' }, [
-          createElement('h3', {}, ['Business Problem']),
-          createElement('p', {}, [experience.problem])
-        ]),
-        createElement('div', { className: 'modal-section' }, [
-          createElement('h3', {}, ['Responsibilities']),
-          createElement('ul', {}, experience.responsibilities.map((item) => createElement('li', {}, [item])))
-        ]),
-        createElement('div', { className: 'modal-section' }, [
-          createElement('h3', {}, ['Technologies']),
-          createElement('p', {}, [experience.technologies.join(', ')])
-        ]),
-        createElement('div', { className: 'modal-section' }, [
-          createElement('h3', {}, ['Business Outcome']),
-          createElement('p', {}, [experience.outcome])
-        ]),
-        createElement('p', { className: 'modal-disclaimer small-copy' }, [experience.confidentiality])
-      ])
-    ]);
-    root.appendChild(modal);
-  });
 }
 
 function renderFeaturedProjects() {

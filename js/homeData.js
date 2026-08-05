@@ -74,45 +74,6 @@ export const services = [
   }
 ];
 
-export const enterpriseExperiences = [
-  {
-    id: 'enterprise-jet2',
-    company: 'Jet2 Travel Technologies',
-    role: 'Machine Learning Engineer',
-    dateRange: '2025 – Present',
-    summary: 'Delivered customer AI and automation capabilities for travel operations, capacity planning, and partner enablement.',
-    problem: 'The business needed intelligent automation to reduce ticket processing time and improve travel personalization.',
-    responsibilities: ['Designed production-grade ML pipelines', 'Built agentic customer support systems', 'Integrated AI with enterprise workflows'],
-    technologies: ['Python', 'OpenAI API', 'Azure', 'SQL', 'APIs'],
-    outcome: 'Launched reliable AI systems that reduced manual effort and improved customer satisfaction.',
-    confidentiality: 'Confidential client work. No source code or sensitive data is shown.'
-  },
-  {
-    id: 'enterprise-codiant',
-    company: 'Codiant',
-    role: 'Machine Learning Engineer',
-    dateRange: '2023 – 2024',
-    summary: 'Built production data pipelines and model deployments that supported customer-facing intelligent applications.',
-    problem: 'Existing workflows relied on manual data preparation and lacked real-time insight for business teams.',
-    responsibilities: ['Delivered ETL architecture for ML', 'Launched model serving infrastructure', 'Improved observability and monitoring'],
-    technologies: ['AWS', 'Docker', 'Spark', 'Python', 'MLflow'],
-    outcome: 'Delivered systems that scaled into production and reduced time-to-insight for operations teams.',
-    confidentiality: 'Confidential client work. No source code or sensitive data is shown.'
-  },
-  {
-    id: 'enterprise-pojo',
-    company: 'Pojo Software',
-    role: 'Data Analyst Intern',
-    dateRange: '2022 – 2023',
-    summary: 'Supported analytics and data automation for early-stage software products and user workflows.',
-    problem: 'The company needed faster data extraction and reporting for product decisions.',
-    responsibilities: ['Developed data ETL pipelines', 'Automated reporting dashboards', 'Built analytics models'],
-    technologies: ['Python', 'PostgreSQL', 'Tableau', 'Pandas'],
-    outcome: 'Improved reporting velocity and operational visibility across product teams.',
-    confidentiality: 'This experience is public and representative of process-oriented work.'
-  }
-];
-
 export const featuredProjects = [
   {
     id: 'ai-resume-screening',

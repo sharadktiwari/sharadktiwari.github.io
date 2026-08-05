@@ -47,7 +47,6 @@ export async function initializeRenderer() {
 
 async function renderAbout() {
   await renderAboutHero();
-  await renderProfessionalJourney();
   await renderEngineeringPhilosophy();
   await renderCoreValues();
   await renderWhatIBuild();
@@ -89,21 +88,6 @@ async function renderAboutHero() {
   ]);
 
   placeholder.appendChild(hero);
-}
-
-async function renderProfessionalJourney() {
-  const placeholder = document.querySelector('[data-json="professionalJourney"]');
-  if (!placeholder) return;
-  const journey = await loadJSON('data/journey.json');
-  if (!journey) return;
-
-  placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['Professional Journey']),
-    createElement('h2', {}, ['A career built on business value and production AI delivery'])
-  ]));
-
-  const timeline = createElement('div', { className: 'timeline-list about-journey-list' }, journey.map((item) => createTimelineItem(item)));
-  placeholder.appendChild(timeline);
 }
 
 async function renderEngineeringPhilosophy() {
