@@ -174,6 +174,100 @@ body.modal-open {
   outline: 2px solid rgba(59, 130, 246, 0.35);
 }
 
+.form-grid {
+  display: grid;
+  gap: var(--space-l);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+  gap: var(--space-l);
+}
+
+.contact-sidebar {
+  display: grid;
+  gap: var(--space-l);
+}
+
+.contact-summary-card {
+  padding: var(--space-l);
+}
+
+.contact-availability-card {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.contact-availability-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-engagement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.contact-hero-surface {
+  padding: var(--space-l);
+  min-height: 360px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.04);
+  display: grid;
+  align-items: center;
+}
+
+.hero-stats {
+  display: grid;
+  gap: var(--space-s);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero-stat {
+  padding: var(--space-m);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+}
+
+.project-type-card {
+  min-height: 120px;
+  display: grid;
+  align-items: center;
+}
+
+.contact-methods {
+  gap: var(--space-m);
+}
+
+.form-status {
+  margin: 0;
+}
+
+.status-success {
+  color: var(--color-success);
+}
+
+.status-error {
+  color: var(--color-danger);
+}
+
+@media (max-width: 1024px) {
+  .form-grid,
+  .contact-layout,
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
 .timeline {
   display: grid;
   gap: var(--space-m);

@@ -1,0 +1,14 @@
+[
+  {"id": "generative-ai", "title": "Generative AI", "description": "Models, prompts, and production workflows for creative AI applications."},
+  {"id": "rag", "title": "Retrieval-Augmented Generation", "description": "Bridging knowledge and language models with retrieval systems."},
+  {"id": "agentic-ai", "title": "Agentic AI", "description": "Designing autonomous agents and workflow orchestration for AI."},
+  {"id": "machine-learning", "title": "Machine Learning", "description": "Modeling, data pipelines, and ML systems engineering."},
+  {"id": "mlops", "title": "MLOps", "description": "Operational best practices for building and deploying AI systems."},
+  {"id": "fastapi", "title": "FastAPI", "description": "API-first application design for production AI services."},
+  {"id": "aws", "title": "AWS", "description": "Cloud-native AI architecture and managed infrastructure."},
+  {"id": "azure", "title": "Azure", "description": "Microsoft cloud tooling and enterprise-scale AI deployments."},
+  {"id": "computer-vision", "title": "Computer Vision", "description": "Image understanding, OCR, and visual intelligence at scale."},
+  {"id": "prompt-engineering", "title": "Prompt Engineering", "description": "Structured prompt design, evaluation, and reliable outputs."},
+  {"id": "document-intelligence", "title": "Document Intelligence", "description": "Intelligent extraction, search, and automation for documents."},
+  {"id": "career-learning", "title": "Career & Learning", "description": "Engineering leadership, learning strategies, and team practices."}
+]

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AI engineering articles, research notes, and published insights." />
-    <title>Blog — Sharad Tiwari AI Consulting</title>
-    <link rel="canonical" href="https://sharad-tiwari.ai/blog.html" />
+    <meta name="description" content="AI engineering articles, technical insights, and production AI best practices." />
+    <title>AI Engineering Insights — Sharad Tiwari AI Consulting</title>
+    <link rel="canonical" href="https://sharadktiwari.github.io/blog.html" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -19,12 +19,16 @@
     <div id="app-shell">
       <header id="navbar-root"></header>
       <main id="main-content" class="page-shell" aria-label="Primary content">
-        <section class="page-intro container reveal-on-scroll">
-          <h1>Blog</h1>
-          <p>Page scaffold for future articles, technical storytelling, and thought leadership.</p>
-        </section>
+        <section class="page-intro container reveal-on-scroll" data-json="insightsHero"></section>
 
-        <section class="container" data-json="blogs"></section>
+        <section class="container section-gap" data-json="featuredArticles"></section>
+
+        <section class="container section-gap" data-json="browseTopics"></section>
+
+        <section class="container section-gap" data-json="latestArticles"></section>
+
+        <section class="container section-gap" data-json="popularReads"></section>
+        <section class="container section-gap" data-json="insightsCta"></section>
       </main>
       <footer id="footer-root"></footer>
     </div>

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Email Consultation",
+    "description": "Share your project overview and I’ll respond with next steps and a proposed scope.",
+    "icon": "✉️",
+    "url": "mailto:hello@sharad-tiwari.ai",
+    "linkLabel": "Email Now"
+  },
+  {
+    "title": "Schedule a Call",
+    "description": "Book a strategy session to align goals, timelines and the technical approach.",
+    "icon": "📅",
+    "url": "https://calendly.com/sharad-kiwari/ai-consultation",
+    "linkLabel": "Book a Call"
+  },
+  {
+    "title": "LinkedIn",
+    "description": "Connect on LinkedIn to review experience, case studies and collaboration fit.",
+    "icon": "🔗",
+    "url": "https://www.linkedin.com/in/sharad-tiwari/",
+    "linkLabel": "Visit Profile"
+  }
+]

@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: 'Sharad Tiwari',
   title: 'AI Consultant & Machine Learning Engineer',
-  email: 'hello@sharad-tiwari.ai',
-  githubUsername: 'sharad-tiwari',
+  email: 'sharadktiwari2000@gmail.com',
+  githubUsername: 'sharadktiwari',
   linkedIn: 'sharad-tiwari',
   resumeUrl: './assets/Sharad-Tiwari-Resume.pdf',
   navigation: [
@@ -11,7 +11,7 @@ export const siteConfig = {
     { label: 'Experience', href: 'experience.html' },
     { label: 'Case Studies', href: 'case-studies.html' },
     { label: 'Solutions Lab', href: 'projects.html' },
-    { label: 'Blog', href: 'blog.html' },
+    { label: 'AI Engineering Insights', href: 'blog.html' },
     { label: 'About', href: 'about.html' },
     { label: 'Contact', href: 'contact.html' }
   ],

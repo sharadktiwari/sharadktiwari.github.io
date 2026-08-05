@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Do you work with international clients?",
+    "answer": "Yes. I work with clients worldwide and structure remote collaboration for clear communication and timely delivery."
+  },
+  {
+    "question": "Can you sign an NDA?",
+    "answer": "Yes. I can sign an NDA before reviewing sensitive project details or proprietary data."
+  },
+  {
+    "question": "Do you provide fixed-price quotes?",
+    "answer": "I can provide fixed-price estimates for well-defined scopes and roadmaps after an initial discovery phase."
+  },
+  {
+    "question": "Do you work hourly or by project?",
+    "answer": "I work both hourly and by project, depending on the engagement type and client preference."
+  },
+  {
+    "question": "Can you improve an existing AI system?",
+    "answer": "Yes, I review existing systems, identify gaps, and recommend practical improvements for reliability and performance."
+  },
+  {
+    "question": "Do you offer ongoing support?",
+    "answer": "Yes. I can support long-term improvement, monitoring, and operational excellence after deployment."
+  }
+]
