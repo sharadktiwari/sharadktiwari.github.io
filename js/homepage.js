@@ -1,0 +1,163 @@
+import { createElement, getCurrentPage } from './utils.js';
+import { hero, trustPartners, statistics, businessOutcomes, services, enterpriseExperiences, featuredProjects, technologyExpertise, whyCards, testimonials, latestArticles } from './homeData.js';
+import { createServiceCard } from './components/serviceCard.js';
+import { createProjectCard } from './components/projectCard.js';
+import { createStatisticCard } from './components/statisticCard.js';
+import { createEnterpriseCard } from './components/enterpriseCard.js';
+import { createTestimonialCard } from './components/testimonialCard.js';
+import { createExpertiseBadge } from './components/expertiseBadge.js';
+import { createFeatureCard } from './components/featureCard.js';
+import { createBlogCard } from './components/blogCard.js';
+
+export function initializeHomepage() {
+  if (getCurrentPage() !== 'home') return;
+  renderTrustPartners();
+  renderStatistics();
+  renderBusinessOutcomes();
+  renderServices();
+  renderEnterpriseExperience();
+  renderFeaturedProjects();
+  renderTechnologyExpertise();
+  renderWhyWorkWithMe();
+  renderTestimonials();
+  renderLatestArticles();
+}
+
+function renderTrustPartners() {
+  const container = document.querySelector('[data-home-section="trust"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'trust-grid' }, trustPartners.map((partner) => {
+    return createElement('div', { className: 'trust-pill' }, [partner.name]);
+  }));
+
+  container.appendChild(grid);
+}
+
+function renderStatistics() {
+  const container = document.querySelector('[data-home-section="statistics"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-4' }, statistics.map((stat) => createStatisticCard(stat)));
+  container.appendChild(grid);
+  animateCounters();
+}
+
+function animateCounters() {
+  const items = document.querySelectorAll('[data-counter]');
+  const observer = new IntersectionObserver((entries, observerRef) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const element = entry.target;
+      const targetValue = Number(element.dataset.counter);
+      const suffix = element.dataset.suffix || '';
+      let current = 0;
+      const step = Math.max(1, Math.floor(targetValue / 30));
+      const interval = setInterval(() => {
+        current += step;
+        if (current >= targetValue) {
+          element.textContent = `${targetValue}${suffix}`;
+          clearInterval(interval);
+        } else {
+          element.textContent = `${current}${suffix}`;
+        }
+      }, 24);
+      observerRef.unobserve(element);
+    });
+  }, { threshold: 0.3 });
+
+  items.forEach((item) => observer.observe(item));
+}
+
+function renderBusinessOutcomes() {
+  const container = document.querySelector('[data-home-section="outcomes"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-3' }, businessOutcomes.map((outcome) => {
+    return createElement('article', { className: 'card scale-up outcome-card' }, [
+      createElement('h3', {}, [outcome.title]),
+      createElement('p', {}, [outcome.description])
+    ]);
+  }));
+  container.appendChild(grid);
+}
+
+function renderServices() {
+  const container = document.querySelector('[data-home-section="services"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-2' }, services.map((service) => createServiceCard(service)));
+  container.appendChild(grid);
+}
+
+function renderEnterpriseExperience() {
+  const container = document.querySelector('[data-home-section="enterprise"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-3' }, enterpriseExperiences.map((experience) => createEnterpriseCard(experience)));
+  container.appendChild(grid);
+  renderEnterpriseModals();
+}
+
+function renderEnterpriseModals() {
+  const root = document.querySelector('#modal-root');
+  if (!root) return;
+  enterpriseExperiences.forEach((experience) => {
+    const modal = createElement('div', { className: 'modal', 'data-modal': experience.id }, [
+      createElement('div', { className: 'modal-content' }, [
+        createElement('button', { className: 'modal-close', type: 'button', 'data-modal-close': 'true', 'aria-label': 'Close modal' }, ['×']),
+        createElement('h2', {}, [experience.company]),
+        createElement('p', { className: 'eyebrow-label' }, [experience.role]),
+        createElement('p', { className: 'modal-summary' }, [experience.summary]),
+        createElement('div', { className: 'modal-section' }, [
+          createElement('h3', {}, ['Business Problem']),
+          createElement('p', {}, [experience.problem])
+        ]),
+        createElement('div', { className: 'modal-section' }, [
+          createElement('h3', {}, ['Responsibilities']),
+          createElement('ul', {}, experience.responsibilities.map((item) => createElement('li', {}, [item])))
+        ]),
+        createElement('div', { className: 'modal-section' }, [
+          createElement('h3', {}, ['Technologies']),
+          createElement('p', {}, [experience.technologies.join(', ')])
+        ]),
+        createElement('div', { className: 'modal-section' }, [
+          createElement('h3', {}, ['Business Outcome']),
+          createElement('p', {}, [experience.outcome])
+        ]),
+        createElement('p', { className: 'modal-disclaimer small-copy' }, [experience.confidentiality])
+      ])
+    ]);
+    root.appendChild(modal);
+  });
+}
+
+function renderFeaturedProjects() {
+  const container = document.querySelector('[data-home-section="projects"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-3' }, featuredProjects.map((project) => createProjectCard(project)));
+  container.appendChild(grid);
+}
+
+function renderTechnologyExpertise() {
+  const container = document.querySelector('[data-home-section="expertise"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'expertise-grid' }, technologyExpertise.map((category) => createExpertiseBadge(category)));
+  container.appendChild(grid);
+}
+
+function renderWhyWorkWithMe() {
+  const container = document.querySelector('[data-home-section="why"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-4' }, whyCards.map((item) => createFeatureCard(item)));
+  container.appendChild(grid);
+}
+
+function renderTestimonials() {
+  const container = document.querySelector('[data-home-section="testimonials"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-3' }, testimonials.map((testimonial) => createTestimonialCard(testimonial)));
+  container.appendChild(grid);
+}
+
+function renderLatestArticles() {
+  const container = document.querySelector('[data-home-section="articles"]');
+  if (!container) return;
+  const grid = createElement('div', { className: 'section-grid grid-3' }, latestArticles.map((article) => createBlogCard(article)));
+  container.appendChild(grid);
+}

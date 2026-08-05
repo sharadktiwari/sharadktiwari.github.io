@@ -1,0 +1,9 @@
+{
+  "headline": "A boutique AI consultancy built for product teams and business leaders.",
+  "summary": "We focus on business outcomes, production-ready architectures, and practical AI systems that scale within enterprise environments.",
+  "principles": [
+    { "title": "Business-first AI", "description": "AI decisions aligned with measurable company objectives." },
+    { "title": "Engineering excellence", "description": "Robust systems designed for reliability, observability, and operational readiness." },
+    { "title": "Scalable delivery", "description": "Readable code, modular architecture, and predictable product launches." }
+  ]
+}

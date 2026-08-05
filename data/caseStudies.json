@@ -1,0 +1,190 @@
+[
+  {
+    "id": "enterprise-complaint-intelligence",
+    "title": "Enterprise Complaint Intelligence",
+    "category": "Complaint Automation",
+    "businessProblem": "Customer complaints were manually categorized, slowing response times and increasing operational effort.",
+    "businessContext": "A large customer service operation needed consistent routing and faster issue resolution across email and contact forms.",
+    "challenges": [
+      "Inconsistent complaint labels across channels.",
+      "High volume of incoming requests with manual review.",
+      "Need for reliable category mapping without exposing internal data.",
+      "Real-time routing expectations for operational teams."
+    ],
+    "solution": "Designed an enterprise intent classification platform using Generative AI to automate complaint categorization and routing.",
+    "responsibilities": [
+      "Defined the AI solution architecture and deployment model.",
+      "Built prompt-guided classification pipelines for company-specific complaint categories.",
+      "Integrated output with downstream workflows for triage and escalation.",
+      "Validated impact against service-level requirements and business KPIs."
+    ],
+    "technologies": [
+      "Snowflake Cortex AI",
+      "Mixtral",
+      "Prompt Engineering",
+      "Python"
+    ],
+    "impact": [
+      "80% reduction in manual categorization effort.",
+      "Improved routing accuracy for complaint handling.",
+      "Faster customer resolution through automatic triage."
+    ],
+    "lessons": [
+      "Business-aligned classification delivers more value than generic intent models.",
+      "Data quality and taxonomy design are the foundation of reliable automation.",
+      "Experimenting with lightweight prompts enabled fast iteration without model retraining."
+    ],
+    "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
+  },
+  {
+    "id": "ai-complaint-triage-platform",
+    "title": "AI Complaint Triage Platform",
+    "category": "Triage Automation",
+    "businessProblem": "Complaint prioritization was slow and inconsistent.",
+    "businessContext": "Enterprise operations needed a reliable system to classify and prioritize customer feedback across voice, chat, and email.",
+    "challenges": [
+      "Multiple priority signals needed consolidation.",
+      "Manual triage caused delays and inconsistent outcomes.",
+      "The solution had to scale without exposing client details.",
+      "The platform required serverless processing for burst traffic."
+    ],
+    "solution": "Designed a multi-label classification platform with automated summarization and serverless processing.",
+    "responsibilities": [
+      "Created the pipeline for priority scoring and summary generation.",
+      "Built serverless ingestion using event-driven AWS services.",
+      "Defined monitoring for throughput, latency, and classification confidence.",
+      "Partnered with operations teams to validate business impact."
+    ],
+    "technologies": [
+      "AWS Bedrock",
+      "Lambda",
+      "SNS",
+      "SQS",
+      "Python"
+    ],
+    "impact": [
+      "Faster complaint handling with real-time triage.",
+      "Reduced manual triage burden for operations teams.",
+      "Improved consistency of prioritization and routing."
+    ],
+    "lessons": [
+      "Serverless patterns lower infrastructure cost for event-driven workflows.",
+      "Automated summarization makes fast decision-making possible for business users.",
+      "Clear confidence thresholds are essential for production trust."
+    ],
+    "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
+  },
+  {
+    "id": "enterprise-ocr-pipeline",
+    "title": "Enterprise OCR Pipeline",
+    "category": "Document Intelligence",
+    "businessProblem": "Manual work-order extraction required several hours.",
+    "businessContext": "A field operations team needed automated document understanding for invoices, service reports, and workflow forms.",
+    "challenges": [
+      "Heterogeneous document formats and layouts.",
+      "High error risk from manual transcription.",
+      "Integration with existing back-office systems was required.",
+      "Latency targets demanded faster than five-minute processing."
+    ],
+    "solution": "Developed OCR and document understanding pipeline for high-volume work-order extraction.",
+    "responsibilities": [
+      "Designed the document ingestion and parsing architecture.",
+      "Built OCR workflows and validation checkpoints.",
+      "Integrated structured outputs into operational dashboards.",
+      "Ensured reliable processing with automated error handling."
+    ],
+    "technologies": [
+      "FastAPI",
+      "OCR",
+      "Python",
+      "PDF Processing"
+    ],
+    "impact": [
+      "Reduced processing time from hours to under five minutes.",
+      "Improved accuracy of work-order extraction.",
+      "Freed operations capacity for higher-value review tasks."
+    ],
+    "lessons": [
+      "Automating the data capture layer creates outsized business leverage.",
+      "Validation checkpoints are critical for high-confidence document systems.",
+      "A modular pipeline makes updates easier as document formats evolve."
+    ],
+    "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
+  },
+  {
+    "id": "enterprise-mlops-framework",
+    "title": "Enterprise MLOps Framework",
+    "category": "Production Engineering",
+    "businessProblem": "Every ML project required repeated infrastructure setup.",
+    "businessContext": "Multiple teams needed a reusable framework to launch SageMaker models, monitor performance, and streamline retraining.",
+    "challenges": [
+      "Disparate deployment patterns across teams.",
+      "Lack of repeatable model training and deployment workflows.",
+      "Need to support training, inference, and retraining with minimal overhead.",
+      "Infrastructure had to comply with enterprise governance requirements."
+    ],
+    "solution": "Created a reusable SageMaker framework supporting training, deployment and automated retraining.",
+    "responsibilities": [
+      "Built common deployment templates and CI/CD workflows.",
+      "Defined model monitoring and drift detection standards.",
+      "Documented onboarding patterns for new AI projects.",
+      "Coached engineering teams on production readiness and reliability."
+    ],
+    "technologies": [
+      "Amazon SageMaker",
+      "Docker",
+      "MLflow",
+      "Terraform",
+      "Azure DevOps"
+    ],
+    "impact": [
+      "Reduced onboarding time by 50%.",
+      "Supported 10+ production projects with consistent deployments.",
+      "Improved model lifecycle reliability across teams."
+    ],
+    "lessons": [
+      "Reusable infrastructure patterns accelerate enterprise AI adoption.",
+      "Standard monitoring and retraining practices reduce operational risk.",
+      "Documentation and templates are key for cross-team consistency."
+    ],
+    "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
+  },
+  {
+    "id": "internal-python-sdk",
+    "title": "Internal Python SDK",
+    "category": "Developer Productivity",
+    "businessProblem": "Data scientists repeatedly wrote integration code for cloud services.",
+    "businessContext": "A central analytics team needed a reusable toolkit to connect Snowflake, BigQuery, AWS and Google Cloud services.",
+    "challenges": [
+      "Frequent duplicate integration work across teams.",
+      "Inconsistent service configuration and authentication.",
+      "Need to support multiple cloud providers with a single SDK.",
+      "The SDK had to be easy to adopt without impacting existing pipelines."
+    ],
+    "solution": "Developed an internal Python SDK integrating Snowflake, BigQuery, AWS and Google Cloud services.",
+    "responsibilities": [
+      "Designed the SDK interface for common data and compute workflows.",
+      "Built connectors for cloud storage, query engines, and model artifacts.",
+      "Documented usage patterns for analytics and engineering teams.",
+      "Enabled faster experimentation and repeatable cloud access."
+    ],
+    "technologies": [
+      "Python",
+      "Snowflake",
+      "BigQuery",
+      "AWS",
+      "GCS"
+    ],
+    "impact": [
+      "Accelerated experimentation by approximately 40%.",
+      "Reduced duplicate integration effort across teams.",
+      "Improved consistency in cloud data workflows."
+    ],
+    "lessons": [
+      "A common SDK can dramatically reduce friction for analytics teams.",
+      "Supporting multiple providers requires clear abstractions and documentation.",
+      "Investing in reusable components keeps teams focused on business outcomes."
+    ],
+    "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
+  }
+]

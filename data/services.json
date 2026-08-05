@@ -1,0 +1,30 @@
+[
+  {
+    "id": "generative-ai-applications",
+    "title": "Generative AI Applications",
+    "summary": "AI chatbots, knowledge assistants, support automation, and internal search built for enterprise users.",
+    "businessValue": "Deliver contextual automation that improves conversion, retention, and self-service efficiency.",
+    "technologies": ["OpenAI", "RAG", "LLMs", "Knowledge graphs"]
+  },
+  {
+    "id": "agentic-ai",
+    "title": "Agentic AI",
+    "summary": "Workflow automation that connects systems, data, and tasks into reliable decision agents.",
+    "businessValue": "Reduce manual handoffs and operational overhead for repetitive business processes.",
+    "technologies": ["CrewAI", "LangGraph", "Automation", "Task orchestration"]
+  },
+  {
+    "id": "document-intelligence",
+    "title": "Document Intelligence",
+    "summary": "OCR, invoice processing, resume parsing, and PDF understanding with enterprise-grade accuracy.",
+    "businessValue": "Turn unstructured documents into trusted data for faster decisions.",
+    "technologies": ["OCR", "NLP", "PDF search", "Parsing pipelines"]
+  },
+  {
+    "id": "cloud-ai-mlops",
+    "title": "Cloud AI & MLOps",
+    "summary": "Deploy, monitor, and scale AI systems on AWS, Azure, or hybrid cloud platforms.",
+    "businessValue": "Ensure long-term reliability with repeatable CI/CD and model operations.",
+    "technologies": ["AWS", "Azure", "Docker", "CI/CD"]
+  }
+]

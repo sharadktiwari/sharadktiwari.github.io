@@ -1,0 +1,14 @@
+[
+  {
+    "id": "enterprise-ml-platform",
+    "title": "Enterprise AI Decision Platform",
+    "description": "Delivered a production-grade decision support platform that enabled operational leaders to optimize resource allocation using ML.",
+    "category": "Enterprise AI",
+    "status": "Confidential",
+    "stack": ["Python", "OpenAI", "FastAPI", "PostgreSQL"],
+    "tags": ["Machine Learning", "Data Strategy", "Production AI"],
+    "timeline": "2025",
+    "github": "#",
+    "demo": "#"
+  }
+]

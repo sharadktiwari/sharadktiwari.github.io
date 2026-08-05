@@ -1,0 +1,34 @@
+[
+  {
+    "category": "Generative AI",
+    "skills": ["Prompt Engineering", "LLMs", "RAG", "Summarization"]
+  },
+  {
+    "category": "Cloud",
+    "skills": ["AWS", "Azure", "Snowflake", "Serverless"]
+  },
+  {
+    "category": "Machine Learning",
+    "skills": ["Model Training", "Evaluation", "Feature Engineering", "MLflow"]
+  },
+  {
+    "category": "MLOps",
+    "skills": ["CI/CD", "Monitoring", "Deployment", "Automation"]
+  },
+  {
+    "category": "NLP",
+    "skills": ["Intent Classification", "NLP Pipelines", "Search", "NER"]
+  },
+  {
+    "category": "Computer Vision",
+    "skills": ["OCR", "Image Processing", "YOLO", "Document Understanding"]
+  },
+  {
+    "category": "Backend",
+    "skills": ["APIs", "FastAPI", "Serverless", "Integration"]
+  },
+  {
+    "category": "Databases",
+    "skills": ["Snowflake", "PostgreSQL", "BigQuery", "Elasticsearch"]
+  }
+]

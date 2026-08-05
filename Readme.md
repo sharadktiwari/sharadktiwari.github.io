@@ -1,77 +1,69 @@
-# Personal Portfolio 🔥
-> https://sharadktiwari.github.io/
+# Sharad Tiwari Portfolio — Phase 1 Foundation
 
-:star: Star me on GitHub — it helps!
+## Overview
+This repository contains the foundation for a premium AI consulting portfolio website built with static HTML, CSS, and vanilla JavaScript.
 
-[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/sharadktiwari/sharadktiwari.github.io/commits/master)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://sharadktiwari.github.io/)
-[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/sharadktiwari/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+The architecture follows a strict separation of concerns:
+- `index.html`, `services.html`, `experience.html`, `case-studies.html`, `projects.html`, `blog.html`, `about.html`, `contact.html` — page templates.
+- `css/` — modular styling, variables, layout, typography, components, animations, utilities, responsive rules.
+- `js/` — ES6 modules with clear feature responsibilities.
+- `js/components/` — reusable DOM component constructors.
+- `data/` — JSON-driven content schemas.
+- `assets/` — asset directories for images, icons, logos, videos, and diagrams.
+- `favicon/` — placeholder folder for favicon assets.
 
-### Website Preview
-#### Home Page
-<img src="website_images/HomePage.png" width="1915">
+## Architecture
+### HTML
+Each page is a lightweight shell with a shared navigation and footer rendered by JavaScript.
 
+### CSS
+Styles are organized into:
+- `variables.css`
+- `reset.css`
+- `layout.css`
+- `typography.css`
+- `components.css`
+- `animations.css`
+- `utilities.css`
+- `responsive.css`
 
-#### About Page
-<img src="website_images/AboutPage.png" width="1884">
+### JavaScript
+JavaScript responsibilities are separated into:
+- `config.js` — site metadata and navigation configuration.
+- `utils.js` — generic helpers for DOM creation, JSON loading, and scroll behavior.
+- `navigation.js` — mobile menu, sticky header, and navigation interactions.
+- `animations.js` — reveal-on-scroll and animation utilities.
+- `modal.js` — modal open/close behavior.
+- `renderer.js` — JSON rendering scaffolding.
+- `github.js` — GitHub-specific helpers.
+- `contact.js` — contact form and validation hooks.
+- `js/components/` — reusable component constructors.
 
+### JSON
+The `data/` folder stores schema-driven content for:
+- projects
+- services
+- experience
+- blogs
+- testimonials
+- certifications
+- achievements
 
-#### Projects Page
-<img src="website_images/ProjectPage.png" width="1878">
-  
+## Getting Started
+1. Open the `portfolio` folder in your editor.
+2. Serve the site from a static server or GitHub Pages.
+3. Update `js/config.js` with the live site settings.
+4. Add content to the JSON files in `data/`.
+5. Build page sections by rendering JSON data through `js/renderer.js`.
 
+## Development Notes
+- No framework is used.
+- No inline CSS or inline JavaScript.
+- All page content can be driven from `data/*.json`.
+- The structure is designed for future additions like blog articles, case studies, and public projects.
 
-:star: Star me on GitHub — it helps!
-
-## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
-
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> 
-- Add or remove images from `assets/img/` directory as per your requirement.
-- Update the info of `projects` folder according to your need
-- Use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create your own website.
-- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io` and push the generated code to the `master` branch.
-
-## Sections 📚
-✔️ About\
-✔️ Interests\
-✔️ Education\
-✔️ Online Certification\
-✔️ Experience\
-✔️ Projects \
-✔️ Skills \
-✔️ Resume\
-✔️ Contact Info
-
-
-
-## Tools Used 🛠️
-* <b>GitHub Pages</b> - To host my static website (HTML, CSS, JS).
-
-## Contributing 💡
-#### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine.
-
-
-#### Step 2
-
-- **Build your code** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request.
-
-## License
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+## Next Steps
+- Implement shared navigation rendering in `js/components/navbar.js`.
+- Add footer content in `js/components/footer.js`.
+- Build out page-specific renderers for services, projects, and experience.
+- Add favicon assets and SEO metadata as part of production deployment.
