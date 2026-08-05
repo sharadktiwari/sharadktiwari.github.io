@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Generative AI",
+    "skills": ["Prompt engineering", "LLMs", "RAG", "Knowledge assistants"],
+    "link": "#"
+  },
+  {
+    "category": "Machine Learning",
+    "skills": ["Predictive models", "Classification", "Forecasting", "Anomaly detection"],
+    "link": "#"
+  },
+  {
+    "category": "Backend",
+    "skills": ["APIs", "FastAPI", "Integration", "Serverless"],
+    "link": "#"
+  },
+  {
+    "category": "Cloud",
+    "skills": ["AWS", "Azure", "Snowflake", "Serverless"],
+    "link": "#"
+  },
+  {
+    "category": "Databases",
+    "skills": ["Snowflake", "PostgreSQL", "BigQuery", "Elasticsearch"],
+    "link": "#"
+  },
+  {
+    "category": "DevOps",
+    "skills": ["CI/CD", "Monitoring", "Infrastructure as code", "MLOps"],
+    "link": "#"
+  }
+]

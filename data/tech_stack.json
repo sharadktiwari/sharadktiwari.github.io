@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Generative AI",
+    "skills": ["OpenAI", "Anthropic", "CrewAI", "GPT-4", "LangChain"],
+    "filter": "generative-ai"
+  },
+  {
+    "category": "Machine Learning",
+    "skills": ["scikit-learn", "PyTorch", "TensorFlow", "XGBoost"],
+    "filter": "ml"
+  },
+  {
+    "category": "Backend",
+    "skills": ["FastAPI", "Docker", "PostgreSQL", "Redis"],
+    "filter": "backend"
+  },
+  {
+    "category": "Cloud",
+    "skills": ["AWS", "Azure", "GCP", "Terraform"],
+    "filter": "cloud"
+  },
+  {
+    "category": "DevOps",
+    "skills": ["GitHub Actions", "Docker", "Kubernetes", "CI/CD"],
+    "filter": "devops"
+  },
+  {
+    "category": "Databases",
+    "skills": ["PostgreSQL", "MongoDB", "Redis"],
+    "filter": "databases"
+  },
+  {
+    "category": "Computer Vision",
+    "skills": ["OCR", "OpenCV", "TensorFlow", "AWS Rekognition"],
+    "filter": "computer-vision"
+  },
+  {
+    "category": "Frontend",
+    "skills": ["JavaScript", "HTML", "CSS", "Tailwind"],
+    "filter": "frontend"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "project-duration",
+    "question": "How long does an AI project take?",
+    "answer": "Typical AI engagements range from four to twelve weeks depending on scope, data readiness and production requirements. Early discovery helps identify an efficient path to impact."
+  },
+  {
+    "id": "software-integration",
+    "question": "Can AI integrate with existing software?",
+    "answer": "Yes. I design solutions to connect with existing systems using APIs, serverless functions and secure integration layers."
+  },
+  {
+    "id": "startups",
+    "question": "Do you work with startups?",
+    "answer": "Absolutely. I help startups validate AI use cases, build MVPs and scale production systems with a focus on business outcomes."
+  },
+  {
+    "id": "cloud-deployment",
+    "question": "Can you deploy to AWS or Azure?",
+    "answer": "Yes. I have experience deploying production AI systems on AWS and Azure, including serverless APIs, managed model services and monitoring."
+  },
+  {
+    "id": "internal-tools",
+    "question": "Can you build internal AI tools?",
+    "answer": "Yes. I build internal assistants, document search tools and workflow automation that support teams across operations, support and analytics."
+  },
+  {
+    "id": "post-launch-support",
+    "question": "Do you provide post-launch support?",
+    "answer": "Yes. Support can include monitoring, tuning, retraining plans and lightweight maintenance to keep the system performing in production."
+  }
+]
