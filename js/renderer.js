@@ -47,15 +47,15 @@ export async function initializeRenderer() {
 
 async function renderAbout() {
   await renderAboutHero();
-  await renderEngineeringPhilosophy();
-  await renderCoreValues();
-  await renderWhatIBuild();
-  await renderTechnologyExpertise();
   await renderLearningCertifications();
   await renderAwardsRecognition();
   await renderWorkingStyle();
   await renderFaqAbout();
   await renderAboutCta();
+  // include selected contact blocks on the About page (merged view)
+  await renderContactAvailability();
+  await renderContactMethods();
+  await renderContactFaq();
 }
 
 async function renderAboutHero() {
@@ -233,7 +233,7 @@ async function renderAboutCta() {
       createElement('h2', {}, ['Whether you’re exploring AI for the first time or scaling an enterprise AI platform, I’d be happy to discuss your goals and recommend the right approach.'])
     ]),
     createElement('div', { className: 'cta-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: 'contact.html' }, ['Book a Consultation']),
+      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Book a Consultation']),
       createElement('a', { className: 'btn btn-secondary', href: 'projects.html' }, ['Explore My Solutions'])
     ])
   ]));
@@ -409,7 +409,7 @@ async function renderHero() {
       'Helping startups and businesses automate workflows, improve customer experiences and build production-grade AI systems using Generative AI, Machine Learning and Cloud Infrastructure.'
     ]),
     createElement('div', { className: 'hero-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: 'contact.html' }, ['Schedule Consultation']),
+      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Schedule Consultation']),
       createElement('a', { className: 'btn btn-secondary', href: 'projects.html' }, ['View Projects'])
     ])
   ]);
@@ -593,7 +593,6 @@ async function renderProjects() {
 async function renderSolutionsLab() {
   await renderProjectsHero();
   await renderFeaturedSolutions();
-  await renderArchitecturePrinciples();
   await renderProjectCategories();
   await renderSolutionsGrid();
   await renderOpenSource();
@@ -758,8 +757,8 @@ async function renderProjectsCta() {
       createElement('p', { className: 'eyebrow-label' }, ['Have a Similar AI Idea?']),
       createElement('h2', {}, ['Whether you are building an AI product from scratch or improving an existing workflow, let’s discuss how we can create a solution tailored to your business.'])
     ]),
-    createElement('div', { className: 'cta-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: 'contact.html' }, ['Book Consultation']),
+      createElement('div', { className: 'cta-actions' }, [
+      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Book Consultation']),
       createElement('a', { className: 'btn btn-secondary', href: 'services.html' }, ['Explore Services'])
     ])
   ]));
@@ -970,7 +969,7 @@ async function renderInsightsCta() {
       createElement('h2', {}, ['If you are planning an AI initiative or need help building production-ready AI systems, let’s discuss your project.'])
     ]),
     createElement('div', { className: 'cta-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: 'contact.html' }, ['Book Consultation']),
+      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Book Consultation']),
       createElement('a', { className: 'btn btn-secondary', href: 'services.html' }, ['Explore Services'])
     ])
   ]));

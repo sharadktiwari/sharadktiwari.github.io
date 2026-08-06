@@ -4,7 +4,7 @@
 This repository contains the foundation for a premium AI consulting portfolio website built with static HTML, CSS, and vanilla JavaScript.
 
 The architecture follows a strict separation of concerns:
-- `index.html`, `services.html`, `experience.html`, `case-studies.html`, `projects.html`, `blog.html`, `about.html`, `contact.html` — page templates.
+- `index.html`, `services.html`, `experience.html`, `case-studies.html`, `projects.html`, `blog.html`, `about.html` — page templates (contact merged into About).
 - `css/` — modular styling, variables, layout, typography, components, animations, utilities, responsive rules.
 - `js/` — ES6 modules with clear feature responsibilities.
 - `js/components/` — reusable DOM component constructors.

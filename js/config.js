@@ -12,8 +12,7 @@ export const siteConfig = {
     { label: 'Case Studies', href: 'case-studies.html' },
     { label: 'Solutions Lab', href: 'projects.html' },
     { label: 'AI Engineering Insights', href: 'blog.html' },
-    { label: 'About', href: 'about.html' },
-    { label: 'Contact', href: 'contact.html' }
+    { label: 'About', href: 'about.html' }
   ],
   footer: {
     copyright: '© 2026 Sharad Tiwari',

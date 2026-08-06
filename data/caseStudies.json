@@ -75,6 +75,48 @@
     "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
   },
   {
+  "id": "enterprise-rag-knowledge-assistant",
+  "title": "Enterprise RAG Knowledge Assistant",
+  "category": "Generative AI",
+  "businessProblem": "Enterprise teams spent hours manually searching contracts, policies, technical documentation, and knowledge repositories, slowing decision-making and increasing dependency on subject matter experts.",
+  "businessContext": "The organization required an intelligent knowledge retrieval platform that could answer natural language questions using enterprise documents while maintaining high accuracy and minimizing AI hallucinations.",
+  "challenges": [
+    "Large volumes of unstructured documents across multiple formats.",
+    "Balancing retrieval accuracy with low response latency.",
+    "Reducing hallucinations by grounding responses in enterprise knowledge.",
+    "Designing a scalable architecture capable of handling continuous document growth."
+  ],
+  "solution": "Designed and developed a Retrieval-Augmented Generation (RAG) platform that combined semantic search, vector embeddings, intelligent document chunking, and Large Language Models to deliver accurate, context-aware answers from enterprise documents.",
+  "responsibilities": [
+    "Designed the end-to-end RAG architecture and document ingestion pipeline.",
+    "Implemented document preprocessing, chunking, embedding generation, and semantic retrieval workflows.",
+    "Optimized prompt engineering and retrieval strategies to improve answer quality.",
+    "Developed backend APIs and collaborated with stakeholders to validate response accuracy and business value."
+  ],
+  "technologies": [
+    "Azure OpenAI",
+    "GPT-3.5",
+    "OpenAI Embeddings",
+    "LangChain",
+    "FAISS",
+    "FastAPI",
+    "Python",
+    "Semantic Search"
+  ],
+  "impact": [
+    "Reduced enterprise document lookup from 5+ days to minutes.",
+    "Accelerated business decision-making through faster knowledge retrieval.",
+    "Improved accessibility of enterprise knowledge across business teams.",
+    "Reduced dependency on subject matter experts for routine information requests."
+  ],
+  "lessons": [
+    "High-quality retrieval has a greater impact on response quality than prompt complexity alone.",
+    "Well-designed document chunking and metadata significantly improve semantic search performance.",
+    "Grounding LLM responses with retrieved context increases user trust and reduces hallucinations."
+  ],
+  "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
+  },
+  {
     "id": "enterprise-ocr-pipeline",
     "title": "Enterprise OCR Pipeline",
     "category": "Document Intelligence",

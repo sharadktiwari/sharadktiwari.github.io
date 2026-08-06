@@ -24,7 +24,9 @@
       "SQS",
       "Azure DevOps",
       "OCR",
-      "Mixtral"
+      "Mistral",
+      "AI Agents",
+      "AWS Botocore"
     ],
     "logo": "JT"
   },
@@ -50,7 +52,11 @@
       "spaCy",
       "OCR",
       "AWS Lambda",
-      "Elasticsearch"
+      "Elasticsearch",
+      "FastAPI",
+      "Docker",
+      "ML / DL",
+      "NLP"
     ],
     "logo": "CY"
   },
@@ -70,7 +76,9 @@
       "Python",
       "Pandas",
       "NumPy",
-      "Jupyter",
+      "Scipy",
+      "Matplotlib",
+      "Statistics",
       "SQL"
     ],
     "logo": "P"

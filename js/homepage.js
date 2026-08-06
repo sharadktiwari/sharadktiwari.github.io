@@ -1,10 +1,11 @@
 import { createElement, getCurrentPage } from './utils.js';
-import { trustPartners, statistics, businessOutcomes, services, featuredProjects, technologyExpertise, whyCards, testimonials, latestArticles } from './homeData.js';
+import { trustPartners, statistics, businessOutcomes, featuredProjects, technologyExpertise, whyCards, testimonials, latestArticles } from './homeData.js';
 import { createServiceCard } from './components/serviceCard.js';
 import { createProjectCard } from './components/projectCard.js';
 import { createStatisticCard } from './components/statisticCard.js';
 import { createTestimonialCard } from './components/testimonialCard.js';
 import { createExpertiseBadge } from './components/expertiseBadge.js';
+import { createInterestCard } from './components/interestCard.js';
 import { createFeatureCard } from './components/featureCard.js';
 import { createBlogCard } from './components/blogCard.js';
 
@@ -16,9 +17,24 @@ export function initializeHomepage() {
   renderServices();
   renderFeaturedProjects();
   renderTechnologyExpertise();
+  renderWhatIBuild();
   renderWhyWorkWithMe();
   renderTestimonials();
   renderLatestArticles();
+}
+
+async function renderWhatIBuild() {
+  const container = document.querySelector('[data-home-section="whatIBuild"]');
+  if (!container) return;
+  try {
+    const res = await fetch('data/about_interests.json');
+    if (!res.ok) return;
+    const interests = await res.json();
+    const grid = createElement('div', { className: 'section-grid grid-3 interest-grid' }, interests.map((item) => createInterestCard(item)));
+    container.appendChild(grid);
+  } catch (e) {
+    // ignore
+  }
 }
 
 function renderTrustPartners() {
@@ -77,11 +93,18 @@ function renderBusinessOutcomes() {
   container.appendChild(grid);
 }
 
-function renderServices() {
+async function renderServices() {
   const container = document.querySelector('[data-home-section="services"]');
   if (!container) return;
-  const grid = createElement('div', { className: 'section-grid grid-2' }, services.map((service) => createServiceCard(service)));
-  container.appendChild(grid);
+  try {
+    const res = await fetch('data/services.json');
+    if (!res.ok) return;
+    const services = await res.json();
+    const grid = createElement('div', { className: 'section-grid grid-2' }, services.map((service) => createServiceCard(service)));
+    container.appendChild(grid);
+  } catch (e) {
+    // ignore
+  }
 }
 
 function renderFeaturedProjects() {
