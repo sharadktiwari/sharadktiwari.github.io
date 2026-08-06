@@ -1,6 +1,5 @@
 import { loadJSON, createElement, getCurrentPage, scrollToElement } from './utils.js';
 import { siteConfig } from './config.js';
-import { createServiceCard } from './components/serviceCard.js';
 import { createProjectCard } from './components/projectCard.js';
 import { createFeaturedProjectCard } from './components/featuredProjectCard.js';
 import { createProjectModal } from './components/projectModal.js';
@@ -390,7 +389,6 @@ async function renderContactCta() {
 async function renderServices() {
   await renderHero();
   await renderProblems();
-  await renderCoreServices();
   await renderIndustries();
   await renderTechnologyStackServices();
   await renderDeliveryProcess();
@@ -424,16 +422,6 @@ async function renderProblems() {
   if (!problems) return;
 
   const grid = createElement('div', { className: 'section-grid grid-2' }, problems.map((problem) => createProblemCard(problem)));
-  placeholder.appendChild(grid);
-}
-
-async function renderCoreServices() {
-  const placeholder = document.querySelector('[data-json="services"]');
-  if (!placeholder) return;
-  const services = await loadJSON('data/services.json');
-  if (!services) return;
-
-  const grid = createElement('div', { className: 'section-grid grid-2' }, services.map((service) => createServiceCard(service)));
   placeholder.appendChild(grid);
 }
 
