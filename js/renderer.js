@@ -462,9 +462,7 @@ async function renderWhyChooseMe() {
 
 async function renderExperience() {
   await renderExperienceTimeline();
-  await renderExperienceCaseStudies();
   await renderTechnologyStack();
-  await renderEngineeringPrinciples();
   await renderAwards();
 }
 
@@ -478,40 +476,13 @@ async function renderExperienceTimeline() {
   placeholder.appendChild(timeline);
 }
 
-async function renderExperienceCaseStudies() {
-  const placeholder = document.querySelector('[data-json="experienceCaseStudies"]');
-  if (!placeholder) return;
-  const studies = await loadJSON('data/caseStudies.json');
-  if (!studies) return;
-
-  const preview = studies.slice(0, 3);
-  const grid = createElement('div', { className: 'section-grid grid-3' }, preview.map((study) => createCaseStudyCard(study)));
-  placeholder.appendChild(grid);
-}
-
 async function renderTechnologyStack() {
   const placeholder = document.querySelector('[data-json="technologyStack"]');
   if (!placeholder) return;
-  const categories = await loadJSON('data/techCategories.json');
+  const categories = await loadJSON('data/tech_stack.json');
   if (!categories) return;
 
   const grid = createElement('div', { className: 'section-grid grid-3' }, categories.map((category) => createExpertiseBadge(category)));
-  placeholder.appendChild(grid);
-}
-
-async function renderEngineeringPrinciples() {
-  const placeholder = document.querySelector('[data-json="engineeringPrinciples"]');
-  if (!placeholder) return;
-  const principles = await loadJSON('data/principles.json');
-  if (!principles) return;
-
-  const grid = createElement('div', { className: 'section-grid grid-3' }, principles.map((item) => {
-    return createElement('article', { className: 'card scale-up engineering-card' }, [
-      createElement('h3', {}, [item.title]),
-      createElement('p', {}, [item.description])
-    ]);
-  }));
-
   placeholder.appendChild(grid);
 }
 

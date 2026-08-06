@@ -373,6 +373,24 @@ section {
   margin-top: var(--space-m);
 }
 
+.experience-hero {
+  padding-block: var(--space-l);
+}
+
+.experience-hero h1 {
+  max-width: 20ch;
+  font-size: clamp(2.25rem, 3.2vw, 3rem);
+}
+
+.case-studies-hero {
+  padding-block: var(--space-l);
+}
+
+.case-studies-hero h1 {
+  max-width: 20ch;
+  font-size: clamp(2.25rem, 3.2vw, 3rem);
+}
+
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

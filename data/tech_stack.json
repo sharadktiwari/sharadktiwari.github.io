@@ -1,7 +1,7 @@
 [
   {
     "category": "Generative AI",
-    "skills": ["OpenAI", "Anthropic", "CrewAI", "GPT-4", "LangChain"],
+    "skills": ["OpenAI", "Anthropic", "CrewAI", "GPT-4", "LangChain", "LangGraph", "LlamaIndex", "HuggingFace", "AI Agents"],
     "filter": "generative-ai"
   },
   {
@@ -11,32 +11,32 @@
   },
   {
     "category": "Backend",
-    "skills": ["FastAPI", "Docker", "PostgreSQL", "Redis"],
+    "skills": ["FastAPI", "Docker", "Python"],
     "filter": "backend"
   },
   {
     "category": "Cloud",
-    "skills": ["AWS", "Azure", "GCP", "Terraform"],
+    "skills": ["AWS", "Azure", "GCP", "Snowflake", "Terraform"],
     "filter": "cloud"
   },
   {
     "category": "DevOps",
-    "skills": ["GitHub Actions", "Docker", "Kubernetes", "CI/CD"],
+    "skills": ["Azure DevOps", "GitHub Actions", "Docker", "Kubernetes", "CI/CD"],
     "filter": "devops"
   },
   {
     "category": "Databases",
-    "skills": ["PostgreSQL", "MongoDB", "Redis"],
+    "skills": ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
     "filter": "databases"
   },
   {
     "category": "Computer Vision",
-    "skills": ["OCR", "OpenCV", "TensorFlow", "AWS Rekognition"],
+    "skills": ["OCR", "OpenCV", "TensorFlow", "AWS Recognition"],
     "filter": "computer-vision"
   },
   {
     "category": "Frontend",
-    "skills": ["JavaScript", "HTML", "CSS", "Tailwind"],
+    "skills": ["Streamlit", "JavaScript", "HTML", "CSS", "Tailwind"],
     "filter": "frontend"
   }
 ]

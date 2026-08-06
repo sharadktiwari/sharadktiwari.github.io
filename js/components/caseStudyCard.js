@@ -15,6 +15,10 @@ export function createCaseStudyCard(study) {
       createElement('h3', {}, [study.title])
     ]),
     createElement('p', { className: 'case-study-summary small-copy' }, [study.businessProblem]),
+    createElement('div', { className: 'case-study-impact' }, [
+      createElement('p', { className: 'case-study-impact-label' }, ['Key outcome']),
+      createElement('p', {}, [study.impact[0]])
+    ]),
     createElement('div', { className: 'case-study-meta' }, [
       createElement('p', { className: 'small-copy' }, [study.businessContext]),
       createElement('div', { className: 'case-study-stack' }, study.technologies.map((tech) => createElement('span', { className: 'skill-badge' }, [tech])))
