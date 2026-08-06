@@ -1,7 +1,7 @@
 export const hero = {
   headline: 'Building Production AI Systems That Solve Real Business Problems',
   subheadline: 'Machine Learning Engineer with 5+ years of experience helping businesses automate workflows using Generative AI, RAG, Agentic AI, Computer Vision and MLOps.',
-  primaryAction: { label: 'View My Work', href: 'projects.html' },
+  primaryAction: { label: 'View Case Studies', href: 'case-studies.html' },
   secondaryAction: { label: 'Book a Free Consultation', href: 'about.html' },
   badges: [
     { label: '5+ Years Experience' },

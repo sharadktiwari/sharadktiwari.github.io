@@ -23,9 +23,7 @@ export function createFeaturedProjectCard(project) {
         return createElement('span', { className: 'skill-badge' }, [tech]);
       })),
       createElement('div', { className: 'project-actions' }, [
-        createElement('a', { className: 'btn btn-secondary', href: project.github, target: '_blank', rel: 'noreferrer' }, ['GitHub']),
-        createElement('a', { className: 'btn btn-secondary', href: project.demo, target: '_blank', rel: 'noreferrer' }, ['Live Demo']),
-        createElement('button', { className: 'btn btn-primary', type: 'button', 'data-modal-open': project.id }, ['Technical Details'])
+        createElement('button', { className: 'btn btn-primary', type: 'button', 'data-modal-open': project.id }, ['Explore Pattern'])
       ])
     ])
   ]);

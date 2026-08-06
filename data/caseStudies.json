@@ -228,5 +228,43 @@
       "Investing in reusable components keeps teams focused on business outcomes."
     ],
     "confidentialityNotice": "Project descriptions intentionally focus on business outcomes and high-level technical approaches. Source code, datasets, client-specific architecture, screenshots and proprietary implementation details have been omitted to respect confidentiality obligations."
+  },
+  {
+    "id": "appoint-ease",
+    "title": "AppointEase",
+    "category": "AI Scheduling Assistant",
+    "projectType": "Personal Project",
+    "businessProblem": "Scheduling and appointment coordination can require repeated manual follow-ups, making it difficult to find suitable times and keep events organized.",
+    "businessContext": "A personal project built to explore how an AI assistant can improve appointment planning and event recommendations.",
+    "challenges": [
+      "Designing a clear conversational flow for scheduling requests.",
+      "Keeping appointment information accurate and easy to manage.",
+      "Providing useful recommendations without overwhelming the user.",
+      "Creating a responsive experience across the application interface."
+    ],
+    "solution": "Built an AI-assisted scheduling application that supports appointment management and smart event recommendations.",
+    "responsibilities": [
+      "Designed the user experience for appointment creation and management.",
+      "Integrated AI-assisted recommendations into the scheduling workflow.",
+      "Built the application interface and supporting data layer.",
+      "Documented the project in a public GitHub repository."
+    ],
+    "technologies": [
+      "Next.js",
+      "OpenAI",
+      "Firebase"
+    ],
+    "impact": [
+      "Demonstrates an AI-assisted approach to appointment planning and management.",
+      "Shows how intelligent recommendations can support everyday scheduling workflows.",
+      "Provides a public example of product-focused AI application development."
+    ],
+    "lessons": [
+      "Useful AI assistants need a focused workflow and clear user controls.",
+      "Scheduling products benefit from simple, low-friction interaction design.",
+      "Public project documentation makes technical decisions easier to review and discuss."
+    ],
+    "repositoryUrl": "https://github.com/sharad-tiwari/appoint-ease",
+    "confidentialityNotice": "This is a personal public project. The source code is available through the linked GitHub repository."
   }
 ]

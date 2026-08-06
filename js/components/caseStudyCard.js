@@ -12,6 +12,7 @@ export function createCaseStudyCard(study) {
   const card = createElement('article', { className: 'card scale-up case-study-card' }, [
     createElement('div', { className: 'case-study-card-head' }, [
       createElement('span', { className: 'case-study-pill' }, [study.category || 'Enterprise AI']),
+      study.projectType ? createElement('span', { className: 'case-study-pill' }, [study.projectType]) : null,
       createElement('h3', {}, [study.title])
     ]),
     createElement('p', { className: 'case-study-summary small-copy' }, [study.businessProblem]),
@@ -24,7 +25,8 @@ export function createCaseStudyCard(study) {
       createElement('div', { className: 'case-study-stack' }, study.technologies.map((tech) => createElement('span', { className: 'skill-badge' }, [tech])))
     ]),
     createElement('div', { className: 'case-study-actions' }, [
-      createElement('button', { className: 'btn btn-secondary', type: 'button', 'data-modal-open': study.id }, ['View Case Study'])
+      createElement('button', { className: 'btn btn-secondary', type: 'button', 'data-modal-open': study.id }, ['View Case Study']),
+      study.repositoryUrl ? createElement('a', { className: 'btn btn-primary', href: study.repositoryUrl, target: '_blank', rel: 'noopener noreferrer' }, ['View GitHub Repository']) : null
     ])
   ]);
 
@@ -33,6 +35,7 @@ export function createCaseStudyCard(study) {
       createElement('button', { className: 'modal-close', 'data-modal-close': 'true', type: 'button' }, ['×']),
       createElement('h2', {}, [study.title]),
       createElement('p', { className: 'eyebrow-label' }, [study.category || 'Enterprise AI']),
+      study.projectType ? createElement('p', { className: 'small-copy' }, [study.projectType]) : null,
       createElement('div', { className: 'modal-section' }, [
         createElement('h3', {}, ['Business Problem']),
         createElement('p', {}, [study.businessProblem])

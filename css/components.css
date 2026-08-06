@@ -49,6 +49,19 @@
   text-underline-offset: 0.15em;
 }
 
+.solution-pattern-note {
+  max-width: 70rem;
+  padding: var(--space-m);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.solution-pattern-note p:last-child {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
 .modal {
   position: fixed;
   inset: 0;

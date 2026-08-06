@@ -1,7 +1,6 @@
 import { createElement, getCurrentPage } from './utils.js';
-import { trustPartners, statistics, businessOutcomes, featuredProjects, technologyExpertise, whyCards, testimonials, latestArticles } from './homeData.js';
+import { trustPartners, statistics, businessOutcomes, technologyExpertise, whyCards, testimonials, latestArticles } from './homeData.js';
 import { createServiceCard } from './components/serviceCard.js';
-import { createProjectCard } from './components/projectCard.js';
 import { createStatisticCard } from './components/statisticCard.js';
 import { createTestimonialCard } from './components/testimonialCard.js';
 import { createExpertiseBadge } from './components/expertiseBadge.js';
@@ -15,7 +14,6 @@ export function initializeHomepage() {
   renderStatistics();
   renderBusinessOutcomes();
   renderServices();
-  renderFeaturedProjects();
   renderTechnologyExpertise();
   renderWhatIBuild();
   renderWhyWorkWithMe();
@@ -105,13 +103,6 @@ async function renderServices() {
   } catch (e) {
     // ignore
   }
-}
-
-function renderFeaturedProjects() {
-  const container = document.querySelector('[data-home-section="projects"]');
-  if (!container) return;
-  const grid = createElement('div', { className: 'section-grid grid-3' }, featuredProjects.map((project) => createProjectCard(project)));
-  container.appendChild(grid);
 }
 
 function renderTechnologyExpertise() {

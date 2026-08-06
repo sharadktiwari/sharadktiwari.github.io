@@ -1,8 +1,5 @@
 import { loadJSON, createElement, getCurrentPage, scrollToElement } from './utils.js';
 import { siteConfig } from './config.js';
-import { createProjectCard } from './components/projectCard.js';
-import { createFeaturedProjectCard } from './components/featuredProjectCard.js';
-import { createProjectModal } from './components/projectModal.js';
 import { createTimelineItem } from './components/timeline.js';
 import { createBlogCard } from './components/blogCard.js';
 import { createCaseStudyCard } from './components/caseStudyCard.js';
@@ -13,10 +10,6 @@ import { createContactCard } from './components/contactCard.js';
 import { createProcessStep } from './components/processStep.js';
 import { createTechnologyBadge } from './components/technologyBadge.js';
 import { createFaqAccordion } from './components/faqAccordion.js';
-import { createCategoryFilterButton } from './components/categoryFilter.js';
-import { createRepositoryCard } from './components/repositoryCard.js';
-import { createArchitectureCard } from './components/architectureCard.js';
-import { fetchGithubRepos } from './githubApi.js';
 import { createArticleCard } from './components/articleCard.js';
 import { createTopicCard } from './components/topicCard.js';
 import { createPhilosophyCard } from './components/philosophyCard.js';
@@ -30,7 +23,6 @@ const renderMap = {
   services: renderServices,
   experience: renderExperience,
   'case-studies': renderCaseStudies,
-  projects: renderSolutionsLab,
   blog: renderBlog,
   article: renderArticle,
   contact: renderContact
@@ -233,7 +225,7 @@ async function renderAboutCta() {
     ]),
     createElement('div', { className: 'cta-actions' }, [
       createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Book a Consultation']),
-      createElement('a', { className: 'btn btn-secondary', href: 'projects.html' }, ['Explore My Solutions'])
+      createElement('a', { className: 'btn btn-secondary', href: 'case-studies.html' }, ['View Case Studies'])
     ])
   ]));
 }
@@ -406,7 +398,7 @@ async function renderHero() {
     ]),
     createElement('div', { className: 'hero-actions' }, [
       createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Discuss Your Project']),
-      createElement('a', { className: 'btn btn-secondary', href: 'projects.html' }, ['View Projects'])
+      createElement('a', { className: 'btn btn-secondary', href: 'case-studies.html' }, ['View Case Studies'])
     ])
   ]);
 
@@ -512,177 +504,6 @@ async function renderCaseStudies() {
 
   const grid = createElement('div', { className: 'section-grid grid-2' }, studies.map((study) => createCaseStudyCard(study)));
   placeholder.appendChild(grid);
-}
-
-async function renderProjects() {
-  const placeholder = document.querySelector('[data-json="projects"]');
-  if (!placeholder) return;
-  const projects = await loadJSON('data/projects.json');
-  if (!projects) return;
-
-  const grid = createElement('div', { className: 'section-grid grid-3' });
-  projects.forEach((project) => {
-    grid.appendChild(createProjectCard(project));
-  });
-  placeholder.appendChild(grid);
-}
-
-async function renderSolutionsLab() {
-  await renderProjectsHero();
-  await renderFeaturedSolutions();
-  await renderProjectCategories();
-  await renderSolutionsGrid();
-  await renderOpenSource();
-  await renderTechnologyStackProjects();
-  await renderFaqProjects();
-  await renderProjectsCta();
-}
-
-async function renderProjectsHero() {
-  const placeholder = document.querySelector('[data-json="projectsHero"]');
-  if (!placeholder) return;
-
-  const hero = createElement('div', { className: 'hero-copy' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['Solutions Lab']),
-    createElement('h1', { className: 'hero-title' }, ['Production AI Solutions Built for Real-World Problems']),
-    createElement('p', {}, [
-      'Explore production-ready AI applications demonstrating Generative AI, Agentic AI, Retrieval-Augmented Generation, Document Intelligence, Computer Vision and MLOps.'
-    ]),
-    createElement('div', { className: 'hero-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: '#featured-solutions' }, ['View Featured Solutions']),
-      createElement('a', { className: 'btn btn-secondary', href: `https://github.com/${siteConfig.githubUsername}`, target: '_blank', rel: 'noreferrer' }, ['GitHub Profile'])
-    ])
-  ]);
-
-  placeholder.appendChild(hero);
-}
-
-async function renderFeaturedSolutions() {
-  const placeholder = document.querySelector('[data-json="featuredSolutions"]');
-  if (!placeholder) return;
-  const projects = await loadJSON('data/projects.json');
-  if (!projects) return;
-
-  const featured = projects.filter((project) => project.businessProblem && project.businessValue);
-  const grid = createElement('div', { className: 'section-grid grid-3 featured-grid' }, featured.slice(0, 3).map((project) => createFeaturedProjectCard(project)));
-  placeholder.appendChild(grid);
-
-  const modals = createElement('div', { className: 'project-modals' }, featured.slice(0, 3).map((project) => createProjectModal(project)));
-  document.body.appendChild(modals);
-}
-
-async function renderArchitecturePrinciples() {
-  const placeholder = document.querySelector('[data-json="architecturePrinciples"]');
-  if (!placeholder) return;
-  const principles = await loadJSON('data/architecture_principles.json');
-  if (!principles) return;
-
-  placeholder.appendChild(
-    createElement('div', { className: 'section-heading' }, [
-      createElement('p', { className: 'eyebrow-label' }, ['Architecture Principles']),
-      createElement('h2', {}, ['Engineering philosophy for production AI products'])
-    ])
-  );
-
-  const grid = createElement('div', { className: 'section-grid grid-3' }, principles.map((item) => createArchitectureCard(item)));
-  placeholder.appendChild(grid);
-}
-
-async function renderProjectCategories() {
-  const placeholder = document.querySelector('[data-json="projectCategories"]');
-  if (!placeholder) return;
-  const categories = await loadJSON('data/project_categories.json');
-  if (!categories) return;
-
-  const actions = createElement('div', { className: 'filter-bar' }, categories.map((category) => createCategoryFilterButton(category)));
-  placeholder.appendChild(actions);
-}
-
-function bindProjectFilters() {
-  const buttons = Array.from(document.querySelectorAll('[data-filter]'));
-  const cards = Array.from(document.querySelectorAll('.project-card'));
-
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      buttons.forEach((btn) => btn.classList.toggle('active', btn === button));
-      const filter = button.dataset.filter;
-      cards.forEach((card) => {
-        const categories = card.dataset.categories.split(' ');
-        const visible = filter === 'all' || categories.includes(filter);
-        card.style.display = visible ? 'grid' : 'none';
-      });
-    });
-  });
-}
-
-async function renderSolutionsGrid() {
-  const placeholder = document.querySelector('[data-json="solutionsGrid"]');
-  if (!placeholder) return;
-  const projects = await loadJSON('data/projects.json');
-  if (!projects) return;
-
-  const grid = createElement('div', { className: 'section-grid grid-3', id: 'solutions-grid' });
-  projects.forEach((project) => {
-    grid.appendChild(createProjectCard(project));
-  });
-  placeholder.appendChild(grid);
-
-  setTimeout(bindProjectFilters, 200);
-}
-
-async function renderOpenSource() {
-  const placeholder = document.querySelector('[data-json="openSource"]');
-  if (!placeholder) return;
-  const openSource = await loadJSON('data/open_source.json');
-  if (!openSource) return;
-
-  const section = createElement('div', { className: 'open-source-shell' }, [
-    createElement('div', { className: 'section-heading' }, [
-      createElement('p', { className: 'eyebrow-label' }, ['Open Source Contributions']),
-      createElement('h2', {}, ['Public repositories and contribution activity'])
-    ]),
-    createElement('div', { className: 'repo-stats' }, [
-      createElement('div', { className: 'stat-card' }, [createElement('h3', {}, [openSource.statistics.repositories]), createElement('p', {}, ['Repositories'])]),
-      createElement('div', { className: 'stat-card' }, [createElement('h3', {}, [openSource.statistics.stars]), createElement('p', {}, ['Stars'])]),
-      createElement('div', { className: 'stat-card' }, [createElement('h3', {}, [openSource.statistics.contributions]), createElement('p', {}, ['Contribution Activity'])])
-    ]),
-    createElement('div', { className: 'section-grid grid-3' }, openSource.pinned.map((repo) => createRepositoryCard(repo)))
-  ]);
-
-  placeholder.appendChild(section);
-}
-
-async function renderTechnologyStackProjects() {
-  const placeholder = document.querySelector('[data-json="technologyStackProjects"]');
-  if (!placeholder) return;
-  const categories = await loadJSON('data/tech_stack.json');
-  if (!categories) return;
-
-  const cards = createElement('div', { className: 'section-grid grid-3' }, categories.map((category) => {
-    return createElement('article', { className: 'card scale-up technology-card filter-badge', 'data-filter': category.filter }, [
-      createElement('h3', { className: 'technology-title' }, [category.category]),
-      createElement('div', { className: 'technology-badges' }, category.skills.map((skill) => createElement('span', { className: 'skill-badge' }, [skill])))
-    ]);
-  }));
-
-  placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['Technology Stack']),
-    createElement('h2', {}, ['Technologies powering the Solutions Lab'])
-  ]));
-  placeholder.appendChild(cards);
-}
-
-async function renderFaqProjects() {
-  const placeholder = document.querySelector('[data-json="faqProjects"]');
-  if (!placeholder) return;
-  const faqs = await loadJSON('data/faq_projects.json');
-  if (!faqs) return;
-
-  placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['FAQ']),
-    createElement('h2', {}, ['Frequently asked questions about the Solutions Lab'])
-  ]));
-  placeholder.appendChild(createElement('div', { className: 'faq-list' }, faqs.map((item) => createFaqAccordion(item))));
 }
 
 async function renderProjectsCta() {
