@@ -15,7 +15,7 @@ export function initContactForm() {
 
     event.preventDefault();
     sendMail(formData);
-    displayFormStatus(statusText, 'Opening your email client. Please send the message from there.', 'success');
+    displayFormStatus(statusText, 'Opening your default email app with your project details. Please review and send the message.', 'success');
   });
 
   function sendMail(formData) {
@@ -34,7 +34,7 @@ export function initContactForm() {
     ];
     const body = encodeURIComponent(bodyLines.join('\r\n'));
     const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    window.open(mailtoUrl, '_blank');
+    window.location.href = mailtoUrl;
   }
 }
 

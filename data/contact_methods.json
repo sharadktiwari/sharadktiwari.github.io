@@ -4,7 +4,9 @@
     "description": "Share your project overview and I’ll respond with next steps and a proposed scope.",
     "icon": "✉️",
     "url": "mailto:sharadktiwari2000@gmail.com",
-    "linkLabel": "Email Now"
+    "linkLabel": "Email Now",
+    "gmailUrl": "https://mail.google.com/mail/?view=cm&fs=1&to=sharadktiwari2000@gmail.com",
+    "outlookUrl": "https://outlook.live.com/mail/0/deeplink/compose?to=sharadktiwari2000@gmail.com"
   },
   {
     "title": "Schedule a Call",

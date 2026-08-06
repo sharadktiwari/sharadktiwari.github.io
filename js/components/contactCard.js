@@ -5,6 +5,16 @@ export function createContactCard(method) {
     createElement('div', { className: 'contact-icon' }, [method.icon]),
     createElement('h3', {}, [method.title]),
     createElement('p', {}, [method.description]),
-    method.url ? createElement('a', { className: 'btn btn-secondary', href: method.url, target: '_blank', rel: 'noreferrer' }, [method.linkLabel]) : null
+    method.url ? createElement('div', { className: 'email-action' }, [
+      createElement('a', method.url.startsWith('mailto:')
+        ? { className: 'btn btn-secondary', href: method.url }
+        : { className: 'btn btn-secondary', href: method.url, target: '_blank', rel: 'noopener noreferrer' }, [method.linkLabel]),
+      method.gmailUrl && method.outlookUrl ? createElement('p', { className: 'email-fallback' }, [
+        'Prefer webmail? ',
+        createElement('a', { href: method.gmailUrl, target: '_blank', rel: 'noopener noreferrer' }, ['Gmail']),
+        ' or ',
+        createElement('a', { href: method.outlookUrl, target: '_blank', rel: 'noopener noreferrer' }, ['Outlook'])
+      ]) : null
+    ]) : null
   ]);
 }

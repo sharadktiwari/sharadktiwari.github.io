@@ -390,10 +390,8 @@ async function renderServices() {
   await renderHero();
   await renderProblems();
   await renderIndustries();
-  await renderTechnologyStackServices();
   await renderDeliveryProcess();
   await renderWhyChooseMe();
-  await renderFaq();
 }
 
 async function renderHero() {
@@ -402,12 +400,12 @@ async function renderHero() {
 
   const hero = createElement('div', { className: 'hero-copy' }, [
     createElement('p', { className: 'eyebrow-label' }, ['AI Consulting Services']),
-    createElement('h1', {}, ['AI Solutions That Deliver Measurable Business Results']),
+    createElement('h1', {}, ['Production AI Systems for Measurable Business Results']),
     createElement('p', {}, [
-      'Helping startups and businesses automate workflows, improve customer experiences and build production-grade AI systems using Generative AI, Machine Learning and Cloud Infrastructure.'
+      'I help teams automate workflows, improve customer experiences, and deploy reliable AI systems with clear business outcomes.'
     ]),
     createElement('div', { className: 'hero-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Schedule Consultation']),
+      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Discuss Your Project']),
       createElement('a', { className: 'btn btn-secondary', href: 'projects.html' }, ['View Projects'])
     ])
   ]);
@@ -432,16 +430,6 @@ async function renderIndustries() {
   if (!industries) return;
 
   const grid = createElement('div', { className: 'section-grid grid-4' }, industries.map((industry) => createIndustryCard(industry)));
-  placeholder.appendChild(grid);
-}
-
-async function renderTechnologyStackServices() {
-  const placeholder = document.querySelector('[data-json="technologyStackServices"]');
-  if (!placeholder) return;
-  const categories = await loadJSON('data/technologyCategories.json');
-  if (!categories) return;
-
-  const grid = createElement('div', { className: 'section-grid grid-3' }, categories.map((category) => createTechnologyBadge(category)));
   placeholder.appendChild(grid);
 }
 
@@ -470,16 +458,6 @@ async function renderWhyChooseMe() {
   }));
 
   placeholder.appendChild(grid);
-}
-
-async function renderFaq() {
-  const placeholder = document.querySelector('[data-json="faq"]');
-  if (!placeholder) return;
-  const faqs = await loadJSON('data/faq.json');
-  if (!faqs) return;
-
-  const accordion = createElement('div', { className: 'faq-list' }, faqs.map((item) => createFaqAccordion(item)));
-  placeholder.appendChild(accordion);
 }
 
 async function renderExperience() {

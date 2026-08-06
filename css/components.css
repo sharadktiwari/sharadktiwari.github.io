@@ -32,6 +32,23 @@
   justify-content: center;
 }
 
+.email-action {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.email-fallback {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.email-fallback a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .modal {
   position: fixed;
   inset: 0;
