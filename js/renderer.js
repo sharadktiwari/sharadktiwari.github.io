@@ -38,12 +38,6 @@ export async function initializeRenderer() {
 
 async function renderAbout() {
   await renderAboutHero();
-  await renderLearningCertifications();
-  await renderAwardsRecognition();
-  await renderWorkingStyle();
-  await renderFaqAbout();
-  await renderAboutCta();
-  // include selected contact blocks on the About page (merged view)
   await renderContactAvailability();
   await renderContactMethods();
   await renderContactFaq();
@@ -67,8 +61,7 @@ async function renderAboutHero() {
           href: button.href,
           target: button.external ? '_blank' : '_self',
           rel: button.external ? 'noreferrer' : undefined
-        }, [button.label])),
-        createElement('a', { className: 'btn btn-primary', href: about.ctaButton.href }, [about.ctaButton.label])
+        }, [button.label]))
       ])
     ]),
     createElement('div', { className: 'hero-visual' }, [
@@ -528,8 +521,6 @@ async function renderBlog() {
   await renderBrowseTopics();
   await renderLatestArticles();
   await renderPopularReads();
-  await renderNewsletterPlaceholder();
-  await renderFaqInsights();
   await renderInsightsCta();
 }
 
@@ -539,13 +530,9 @@ async function renderInsightsHero() {
 
   const hero = createElement('div', { className: 'hero-copy' }, [
     createElement('p', { className: 'eyebrow-label' }, ['AI Engineering Insights']),
-    createElement('h1', { className: 'hero-title' }, ['Practical Insights from Building Production AI Systems']),
+    createElement('h1', { className: 'hero-title' }, ['Practical Notes on Building Reliable AI Systems']),
     createElement('p', {}, [
-      'Articles covering Generative AI, Machine Learning, MLOps, Cloud AI and engineering best practices drawn from real-world experience.'
-    ]),
-    createElement('div', { className: 'hero-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: '#featured-articles' }, ['Read Featured Articles']),
-      createElement('a', { className: 'btn btn-secondary', href: 'services.html' }, ['Explore AI Solutions'])
+      'Clear, technical perspectives on Generative AI, machine learning, MLOps, and the decisions that make AI systems reliable in production.'
     ])
   ]);
 
@@ -560,7 +547,7 @@ async function renderFeaturedArticles() {
 
   placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
     createElement('p', { className: 'eyebrow-label' }, ['Featured Articles']),
-    createElement('h2', {}, ['Technical insights for engineering decision makers'])
+    createElement('h2', {}, ['Practical guidance for technical leaders and delivery teams.'])
   ]));
 
   const grid = createElement('div', { className: 'section-grid grid-3 featured-article-grid', id: 'featured-articles' }, featured.map((article) => createArticleCard(article, { featured: true })));
@@ -574,8 +561,8 @@ async function renderBrowseTopics() {
   if (!topics) return;
 
   placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['Browse by Topic']),
-    createElement('h2', {}, ['Filter articles by AI engineering topic'])
+    createElement('p', { className: 'eyebrow-label' }, ['Explore by Topic']),
+    createElement('h2', {}, ['Browse insights by AI discipline and delivery challenge.'])
   ]));
 
   const topicGrid = createElement('div', { className: 'section-grid grid-3 topic-grid' }, topics.map((topic) => createTopicCard(topic)));
@@ -633,8 +620,8 @@ async function renderLatestArticles() {
   if (!articles) return;
 
   placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['Latest Articles']),
-    createElement('h2', {}, ['Insights and engineering guidance'])
+    createElement('p', { className: 'eyebrow-label' }, ['Latest Insights']),
+    createElement('h2', {}, ['Architecture, delivery, and production guidance.'])
   ]));
 
   const controls = createElement('div', { className: 'article-controls' }, [
@@ -667,8 +654,8 @@ async function renderPopularReads() {
   const popular = articles.slice().sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate)).slice(0, 4);
 
   placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['Popular Reads']),
-    createElement('h2', {}, ['The most useful technical resources'])
+    createElement('p', { className: 'eyebrow-label' }, ['Recommended Reads']),
+    createElement('h2', {}, ['A focused selection of practical AI engineering topics.'])
   ]));
 
   const grid = createElement('div', { className: 'section-grid grid-4 popular-grid' }, popular.map((article) => {
@@ -686,35 +673,6 @@ async function renderPopularReads() {
   }));
 
   placeholder.appendChild(grid);
-}
-
-async function renderNewsletterPlaceholder() {
-  const placeholder = document.querySelector('[data-json="newsletterPlaceholder"]');
-  if (!placeholder) return;
-
-  placeholder.appendChild(createElement('div', { className: 'card scale-up newsletter-card' }, [
-    createElement('div', {}, [
-      createElement('p', { className: 'eyebrow-label' }, ['Newsletter']),
-      createElement('h2', {}, ['Stay Updated with Practical AI Engineering Insights']),
-      createElement('p', {}, ['Future newsletter functionality will deliver curated AI engineering content, research highlights, and product-ready guidance.'])
-    ]),
-    createElement('div', { className: 'newsletter-placeholder' }, [
-      createElement('p', {}, ['Newsletter signup coming soon.'])
-    ])
-  ]));
-}
-
-async function renderFaqInsights() {
-  const placeholder = document.querySelector('[data-json="faqInsights"]');
-  if (!placeholder) return;
-  const faqs = await loadJSON('data/faq_insights.json');
-  if (!faqs) return;
-
-  placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['FAQ']),
-    createElement('h2', {}, ['Frequently asked questions about AI Engineering Insights'])
-  ]));
-  placeholder.appendChild(createElement('div', { className: 'faq-list' }, faqs.map((item) => createFaqAccordion(item))));
 }
 
 async function renderInsightsCta() {

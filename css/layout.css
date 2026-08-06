@@ -315,8 +315,10 @@ section {
 }
 
 .visual-element.small-card {
-  top: 16%;
-  left: 16%;
+  top: 12%;
+  right: 16%;
+  bottom: auto;
+  left: auto;
 }
 
 .visual-element.float-card {
@@ -390,6 +392,29 @@ section {
   max-width: 20ch;
   font-size: clamp(2.25rem, 3.2vw, 3rem);
 }
+
+.insights-hero {
+  padding-block: var(--space-l);
+}
+
+.insights-hero .hero-title {
+  max-width: 18ch;
+  font-size: clamp(2.25rem, 3.2vw, 3rem);
+}
+
+.about-page-hero {
+  padding-block: var(--space-l);
+}
+
+.about-page-hero h1 {
+  max-width: 19ch;
+  font-size: clamp(2.25rem, 3.2vw, 3rem);
+}
+
+.about-page-hero .about-hero-surface {
+  min-height: 360px;
+}
+
 
 .trust-grid {
   display: grid;
@@ -892,7 +917,7 @@ section {
   padding: 0.85rem 1rem;
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
+  background-color: var(--color-surface);
   color: var(--color-text);
 }
 
