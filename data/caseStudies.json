@@ -264,7 +264,45 @@
       "Scheduling products benefit from simple, low-friction interaction design.",
       "Public project documentation makes technical decisions easier to review and discuss."
     ],
-    "repositoryUrl": "https://github.com/sharad-tiwari/appoint-ease",
+    "repositoryUrl": "https://github.com/sharadktiwari/appoint-ease",
+    "confidentialityNotice": "This is a personal public project. The source code is available through the linked GitHub repository."
+  },
+  {
+    "id": "appoint-ease-analytics",
+    "title": "AppointEase Analytics",
+    "category": "Clinic Analytics Dashboard",
+    "projectType": "Personal Project",
+    "businessProblem": "Handling appointments and scheduling on daily basis. Daily, Weekly & Monthly level Analytics of appointmnets",
+    "businessContext": "A personal project built to improve clinic management and provide insights.",
+    "challenges": [
+      "Structuring appointment and patient data for reliable status tracking.",
+      "Designing clear visual comparisons across daily, weekly, and monthly views.",
+      "Keeping the dashboard simple enough for non-technical clinic staff to use.",
+      "Handling real-time updates to appointment status without breaking the analytics view."
+    ],
+    "solution": "Built a Streamlit-based clinic dashboard that lets staff manage appointments, review patient-submitted details, and update appointment status, alongside analytics views comparing appointment volume and status trends across days, weeks, and months.",
+    "responsibilities": [
+      "Designed the dashboard layout for appointment management and status tracking.",
+      "Built the analytics views comparing appointment trends across different time periods.",
+      "Set up the MongoDB data layer to store and update appointment and patient information.",
+      "Documented the project in a public GitHub repository."
+    ],
+    "technologies": [
+      "Streamlit",
+      "Python",
+      "MongoDB"
+    ],
+    "impact": [
+      "Gives clinic staff a single place to manage appointments and track patient-submitted details.",
+      "Makes appointment trends and status patterns visible through day/week/month comparisons.",
+      "Provides a public example of a practical, staff-facing analytics tool for small clinics."
+    ],
+    "lessons": [
+      "Operational dashboards benefit more from clarity and low friction than from added complexity.",
+      "Good time-based comparisons (day/week/month) require thinking carefully about how data is aggregated upfront.",
+      "Public documentation makes it easier to revisit and explain design decisions later."
+    ],
+    "repositoryUrl": "https://github.com/sharadktiwari/appoint-ease-analytics/tree/main",
     "confidentialityNotice": "This is a personal public project. The source code is available through the linked GitHub repository."
   }
 ]

@@ -539,11 +539,16 @@ async function renderInsightsHero() {
   placeholder.appendChild(hero);
 }
 
+
 async function renderFeaturedArticles() {
   const placeholder = document.querySelector('[data-json="featuredArticles"]');
   if (!placeholder) return;
-  const featured = await loadJSON('data/featured_articles.json');
-  if (!featured) return;
+
+  const allArticles = await loadJSON('data/blogs.json');
+  if (!allArticles) return;
+
+  const featured = allArticles.filter((article) => article.featured === true);
+  if (!featured.length) return;
 
   placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
     createElement('p', { className: 'eyebrow-label' }, ['Featured Articles']),
@@ -553,6 +558,7 @@ async function renderFeaturedArticles() {
   const grid = createElement('div', { className: 'section-grid grid-3 featured-article-grid', id: 'featured-articles' }, featured.map((article) => createArticleCard(article, { featured: true })));
   placeholder.appendChild(grid);
 }
+
 
 async function renderBrowseTopics() {
   const placeholder = document.querySelector('[data-json="browseTopics"]');
@@ -664,6 +670,7 @@ async function renderPopularReads() {
       createElement('p', { className: 'article-summary' }, [article.summary]),
       createElement('div', { className: 'article-meta' }, [
         createElement('span', {}, [`${article.readingTime || '5 min'} • ${article.publishedDate || ''}`]),
+        createElement('br'),
         createElement('span', {}, [article.category || 'AI'])
       ]),
       createElement('div', { className: 'article-tags' }, (article.tags || []).map((tag) => createElement('span', { className: 'skill-badge' }, [tag]))),
@@ -721,7 +728,9 @@ async function renderArticle() {
     createElement('h1', {}, [article.title]),
     createElement('div', { className: 'article-meta' }, [
       createElement('span', {}, [article.readingTime || '5 min']),
+      createElement('br'),
       createElement('span', {}, [article.publishedDate || '']),
+      createElement('br'),
       createElement('span', {}, [article.author || 'Sharad Tiwari'])
     ]),
     createElement('div', { className: 'article-tags' }, (article.tags || []).map((tag) => createElement('span', { className: 'skill-badge' }, [tag])))

@@ -4,7 +4,7 @@ export const siteConfig = {
   email: 'sharadktiwari2000@gmail.com',
   githubUsername: 'sharadktiwari',
   linkedIn: 'sharad-tiwari',
-  resumeUrl: './assets/Sharad-Tiwari-Resume.pdf',
+  resumeUrl: './assets/files/Sharad_Tiwari_MLE.pdf',
   navigation: [
     { label: 'Home', href: 'index.html' },
     { label: 'Services', href: 'services.html' },

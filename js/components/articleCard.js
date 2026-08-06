@@ -11,6 +11,7 @@ export function createArticleCard(article, options = {}) {
   return createElement('article', { className: `card scale-up article-card ${isFeatured ? 'featured-article' : ''}`, 'data-category': normalizeCategory, 'data-tags': tags.join(' ').toLowerCase() }, [
     createElement('div', { className: 'article-card-media' }, [
       createElement('img', { className: 'article-thumbnail', src: thumb, alt: article.title, loading: 'lazy' }),
+      createElement('br'),
       badge
     ]),
     createElement('div', { className: 'article-card-content' }, [
@@ -19,9 +20,12 @@ export function createArticleCard(article, options = {}) {
       createElement('p', { className: 'article-summary' }, [article.summary]),
       createElement('div', { className: 'article-meta' }, [
         createElement('span', {}, [`${article.readingTime || '5 min'} • ${article.publishedDate || ''}`]),
+        createElement('br'),
         createElement('span', {}, [article.author || 'Sharad Tiwari'])
       ]),
+      createElement('br'),
       createElement('div', { className: 'article-tags' }, tags.map((tag) => createElement('span', { className: 'skill-badge' }, [tag]))),
+      createElement('br'),
       createElement('a', { className: 'btn btn-secondary', href: article.url || '#', role: 'link' }, ['Read Article'])
     ])
   ]);
