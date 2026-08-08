@@ -1,0 +1,42 @@
+[
+  {
+    "id": "aws-ai-practitioner",
+    "title": "AWS Artificial Intelligence Practitioner",
+    "description": "Obtained AWS Artificial Intelligence Practitioner, covering AWS AI/GenAI/Agentic AI services.",
+    "year": "2026",
+    "icon": "🎓",
+    "issuer": "AWS"
+  },
+  {
+    "id": "aws-ml-associate",
+    "title": "AWS ML Engineer Associate",
+    "description": "Obtained AWS ML Engineer Associate, covering AWS ML/DL/AI services.",
+    "year": "2025",
+    "icon": "🎓",
+    "issuer": "AWS"
+  },
+  {
+    "id": "aws-cloud-practitioner",
+    "title": "AWS Cloud Practitioner",
+    "description": "Obtained AWS Cloud Practitioner, covering AWS services (S3, Lambda, VPC, SG, ECS, EKS, RDS, etc).",
+    "year": "2025",
+    "icon": "🎓",
+    "issuer": "AWS"
+  },
+  {
+    "id": "dl-specialization",
+    "title": "Deep Learning Specialization",
+    "description": "Obtained Deep Learning Specialization, covering Neural Networks and Recommendation Systems.",
+    "year": "2023",
+    "icon": "🎓",
+    "issuer": "Stanford University & DeepLearning.ai on Coursera"
+  },
+  {
+    "id": "ml-specialization",
+    "title": "Machine Learning Specialization",
+    "description": "Obtained Machine Learning Specialization, covering supervised and unsupervised learning.",
+    "year": "2023",
+    "icon": "🎓",
+    "issuer": "Stanford University & DeepLearning.ai on Coursera"
+  }
+]

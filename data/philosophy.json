@@ -1,0 +1,38 @@
+[
+  {
+    "id": "business-first",
+    "icon": "💼",
+    "title": "Business Problems First",
+    "description": "I start every engagement with the business challenge, then design AI systems that deliver measurable value." 
+  },
+  {
+    "id": "production-over-prototypes",
+    "icon": "🏗️",
+    "title": "Production Over Prototypes",
+    "description": "Proof of concept is only useful when it leads to an architecture that can be operated, monitored and scaled." 
+  },
+  {
+    "id": "simple-solutions",
+    "icon": "⚙️",
+    "title": "Simple Solutions Scale Better",
+    "description": "Complex models do not create value unless they are integrated into easy-to-use systems with clear ownership." 
+  },
+  {
+    "id": "automation-creates-value",
+    "icon": "🤖",
+    "title": "Automation Creates Value",
+    "description": "AI should reduce manual work, improve accuracy and accelerate business decisions in ways that are easy to maintain." 
+  },
+  {
+    "id": "continuous-learning",
+    "icon": "📈",
+    "title": "Continuous Learning",
+    "description": "AI systems improve over time. I deliver feedback loops, instrumentation and improvement rhythms from day one." 
+  },
+  {
+    "id": "quality-discipline",
+    "icon": "🧪",
+    "title": "Quality Through Engineering Discipline",
+    "description": "Robust testing, code review and observability are non-negotiable for production AI projects." 
+  }
+]

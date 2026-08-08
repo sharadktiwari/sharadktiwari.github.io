@@ -1,0 +1,51 @@
+[
+  {
+    "id": "generative-ai-platforms",
+    "title": "Generative AI Platforms",
+    "description": "Building AI products that generate content, recommendations and domain-aware responses for business workflows.",
+    "useCases": ["Automated content generation", "Personalized document summaries", "Conversational product assistants"],
+    "outcomes": ["Faster decision making", "Improved content consistency", "Reduced manual drafting time"]
+  },
+  {
+    "id": "agentic-ai-systems",
+    "title": "Agentic AI Systems",
+    "description": "Designing agent-led workflows that automate cross-system tasks while preserving human oversight and control.",
+    "useCases": ["AI-driven process orchestration", "Self-service support agents", "Automated data workflows"],
+    "outcomes": ["Higher operational efficiency", "Reduced handoffs", "Faster response times"]
+  },
+  {
+    "id": "enterprise-automation",
+    "title": "Enterprise Automation",
+    "description": "Connecting AI to business systems, data pipelines and workflows to turn intelligence into action." ,
+    "useCases": ["Invoice processing", "Customer journey automation", "Case routing"],
+    "outcomes": ["Cost reduction", "Fewer manual errors", "Scalable operations"]
+  },
+  {
+    "id": "document-intelligence",
+    "title": "Document Intelligence",
+    "description": "Creating structured AI that extracts, understands and leverages document data for enterprise decision making.",
+    "useCases": ["OCR with semantic search", "Contract analysis", "Document-based knowledge retrieval"],
+    "outcomes": ["Faster insights", "Better compliance", "Improved productivity"]
+  },
+  {
+    "id": "cloud-native-ai",
+    "title": "Cloud-Native AI",
+    "description": "Building AI services with scalable architectures, secure deployments and managed cloud infrastructure.",
+    "useCases": ["Serverless inference", "API-driven ML services", "Cloud data integration"],
+    "outcomes": ["Reliable availability", "Easier maintenance", "Clear operational ownership"]
+  },
+  {
+    "id": "developer-tooling",
+    "title": "Developer Tooling",
+    "description": "Creating tools and pipelines that empower engineering teams to deliver AI systems faster and with confidence.",
+    "useCases": ["CI/CD for ML", "Model monitoring dashboards", "Developer SDKs and APIs"],
+    "outcomes": ["Higher developer velocity", "Safer deployments", "Faster iteration"]
+  },
+  {
+    "id": "knowledge-assistants",
+    "title": "Knowledge Assistants",
+    "description": "Designing AI assistants that surface business knowledge, support decisions and improve team productivity.",
+    "useCases": ["Internal knowledge bots", "Sales enablement assistants", "AI-guided workflows"],
+    "outcomes": ["Reduced search time", "Stronger knowledge sharing", "Faster onboarding"]
+  }
+]

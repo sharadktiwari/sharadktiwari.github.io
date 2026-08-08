@@ -1,0 +1,62 @@
+[
+  {
+    "id": "generative-ai-applications",
+    "icon": "🤖",
+    "title": "Generative AI Applications",
+    "description": "Develop intelligent AI assistants that answer questions, automate customer interactions and improve internal productivity.",
+    "outcomes": ["Reduced support costs", "Faster response times", "Improved customer satisfaction"],
+    "deliverables": ["Customer Support Assistant", "Knowledge Assistant", "Internal Chatbot", "Document Chat"],
+    "technologies": ["AWS Bedrock", "Azure OpenAI", "LangChain", "Snowflake Cortex"],
+    "duration": "2–12 weeks"
+  },
+  {
+    "id": "rag-solutions",
+    "icon": "📚",
+    "title": "Retrieval-Augmented Generation (RAG)",
+    "description": "Enable AI systems to answer questions using your organization's private documents and knowledge.",
+    "outcomes": ["Reduced search time", "Improved knowledge sharing", "Higher employee productivity"],
+    "deliverables": ["Enterprise Search", "Document Intelligence", "Policy Assistant", "Contract Search"],
+    "technologies": ["RAG", "Vector search", "Knowledge retrieval"],
+    "duration": "2–10 weeks"
+  },
+  {
+    "id": "agentic-ai",
+    "icon": "⚙️",
+    "title": "Agentic AI & Workflow Automation",
+    "description": "Build autonomous AI agents capable of performing multi-step tasks with minimal human intervention.",
+    "outcomes": ["Reduced manual effort", "Automated decision support", "Faster operations"],
+    "deliverables": ["Research Agents", "Recruitment Agents", "Report Generation", "Approval Workflows"],
+    "technologies": ["Serverless automation", "Task orchestration", "LLMs"],
+    "duration": "2–14 weeks"
+  },
+  {
+    "id": "document-intelligence",
+    "icon": "📄",
+    "title": "Document Intelligence",
+    "description": "Extract structured data from invoices, resumes, forms and PDFs using OCR and AI.",
+    "outcomes": ["Reduced manual processing", "Improved data accuracy", "Faster operations"],
+    "deliverables": ["Invoice Extraction", "Resume Parsing", "KYC Processing", "Form Digitization"],
+    "technologies": ["OCR", "NLP", "Document understanding"],
+    "duration": "2–10 weeks"
+  },
+  {
+    "id": "machine-learning-solutions",
+    "icon": "📈",
+    "title": "Machine Learning Solutions",
+    "description": "Design and deploy predictive models for classification, recommendation, forecasting and anomaly detection.",
+    "outcomes": ["Better business decisions", "Higher efficiency", "Data-driven insights"],
+    "deliverables": ["Recommendation Engines", "Fraud Detection", "Demand Forecasting", "Predictive Analytics"],
+    "technologies": ["ML modeling", "Forecasting", "Anomaly detection"],
+    "duration": "2–14 weeks"
+  },
+  {
+    "id": "cloud-ai-mlops",
+    "icon": "☁️",
+    "title": "Cloud AI & MLOps",
+    "description": "Deploy, monitor and scale production AI systems on modern cloud platforms.",
+    "outcomes": ["Reliable deployments", "Scalable infrastructure", "Lower maintenance effort"],
+    "deliverables": ["Model Deployment", "CI/CD Pipelines", "Monitoring", "Infrastructure Automation"],
+    "technologies": ["AWS", "Azure", "Docker", "MLOps"],
+    "duration": "2–12 weeks"
+  }
+]

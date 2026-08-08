@@ -1,0 +1,67 @@
+.eyebrow-label {
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-s);
+}
+
+.hero-title {
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  margin-top: var(--space-s);
+  max-width: 11ch;
+}
+
+.hero-description,
+.page-intro p,
+.card p {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  max-width: 62ch;
+  margin-top: var(--space-s);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: clamp(2.7rem, 4vw, 3.8rem);
+  line-height: 1.03;
+}
+
+h2 {
+  font-size: clamp(2rem, 2.2vw, 2.8rem);
+  margin-bottom: var(--space-s);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p,
+button,
+input,
+select,
+textarea,
+li {
+  font-size: 1rem;
+}
+
+.small-copy {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.text-highlight {
+  color: var(--color-primary);
+}
