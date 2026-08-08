@@ -1,4 +1,4 @@
-# Sharad Tiwari Portfolio — Phase 1 Foundation
+# Sharad Tiwari Portfolio
 
 ## Overview
 This repository contains the foundation for a premium AI consulting portfolio website built with static HTML, CSS, and vanilla JavaScript.
