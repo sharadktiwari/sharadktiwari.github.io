@@ -448,6 +448,7 @@ async function renderWhyChooseMe() {
 async function renderExperience() {
   await renderExperienceTimeline();
   await renderTechnologyStack();
+  await renderCertifications();
   await renderAwards();
 }
 
@@ -468,6 +469,25 @@ async function renderTechnologyStack() {
   if (!categories) return;
 
   const grid = createElement('div', { className: 'section-grid grid-3' }, categories.map((category) => createExpertiseBadge(category)));
+  placeholder.appendChild(grid);
+}
+
+async function renderCertifications() {
+  const placeholder = document.querySelector('[data-json="certs"]');
+  if (!placeholder) return;
+  const certs = await loadJSON('data/certifications.json');
+  if (!certs) return;
+
+  const grid = createElement('div', { className: 'section-grid grid-3' }, certs.map((cert) => {
+    return createElement('article', { className: 'card scale-up cert-card' }, [
+      createElement('p', { className: 'case-study-pill' }, [cert.icon]),
+      createElement('h3', {}, [cert.title]),
+      createElement('p', { className: 'small-copy' }, [cert.issuer]),
+      createElement('p', { className: 'small-copy' }, [cert.description]),
+      createElement('p', { className: 'small-copy timeline-meta-text' }, [cert.year])
+    ]);
+  }));
+
   placeholder.appendChild(grid);
 }
 
