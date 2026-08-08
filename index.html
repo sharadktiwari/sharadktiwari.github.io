@@ -104,13 +104,17 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/profile.webp" class="img-fluid" alt="">
+          <img src="assets/img/sharad-profile.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <p class="mb-4">
-            ML Engineer with 5 years of experience delivering production-grade ML, GenAI, NLP, and MLOps systems at scale in
-            product environments. Built LLM-powered solutions processing 2,000+ daily customer interactions, reducing operational
-            effort by up to 80% and enabling faster complaint resolution to support customer retention.
+            Machine Learning Engineer with 5 years of experience building production-grade AI systems — GenAI, NLP, and MLOps — that turn slow manual processes into automated, scalable pipelines. At Jet2, I've built LLM-powered systems processing 2,000+ customer interactions daily, cutting manual triage and categorization effort by up to 80% and directly improving complaint resolution speed.
+  
+I work across the full ML lifecycle: from model development and fine-tuning to cloud infrastructure, CI/CD automation, and production inference. I've architected reusable MLOps frameworks on AWS SageMaker that cut ML onboarding time by 50%, and shipped agentic AI systems (CrewAI + AWS Bedrock) now being evaluated for org-wide adoption.
+  
+Core stack: LLMs, RAG, LangChain/LangGraph, CrewAI, AWS Bedrock, Snowflake Cortex AI, SageMaker, Azure OpenAI, Docker, and Python.
+  
+Always open to conversations on applied GenAI, agentic systems, and MLOps — feel free to connect.
           </p>
           
           <ul style="text-align:left;" class="mb-4">
@@ -157,13 +161,13 @@
         <div class="col-lg-3 col-md-4">
           <div class="icon-box">
             <i class="ri-database-line" style="color: #ffbb2c;"></i>
-            <h3>Data Science</h3>
+            <h3>Machine Learning</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="ri-robot-line" style="color: #5578ff;"></i>
-            <h3>Machine Learning</h3>
+            <h3>Generative AI</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
@@ -175,7 +179,7 @@
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
             <i class="ri-global-line" style="color: #1c7d32;"></i>
-            <h3>Deep Learning</h3>
+            <h3>MLOps</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
@@ -187,13 +191,13 @@
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-plane-line" style="color: #f1081f;"></i>
-            <h3>Aviation Data</h3>
+            <h3>Agentic AI</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
           <div class="icon-box">
             <i class="ri-chat-voice-line" style="color: #47aeff;"></i>
-            <h3>Speech Analysis</h3>
+            <h3>RAG</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4">
@@ -388,13 +392,13 @@
               <h5 style="text-align:left;">July 2024 - Present</h5>
               <h6 style="text-align:left;color:#07c48b"><em>Machine Learning Engineer</em></h6>
               <ul style="text-align:left;">
+                <li>Employee Of The Quarter (Jan - Mar 2026) | Diamond Spot Award - 2025</li>
                 <li>Designed a production GenAI intent classification system with Snowflake Cortex AI and fine-tuned Mixtral 8x7B, processing 2,000+ customer call transcripts/day, reducing manual categorization effort by 80%, improving call routing accuracy, and directly enhancing customer resolution experience.</li>
                 <li>Built a real-time multi-label complaint triage system on AWS Bedrock (18 classes) with auto-summarization and a serverless event-driven pipeline using AWS Lambda, SQS, and SNS, reducing manual triaging effort by ~70% and enabling faster complaint resolution, supporting customer retention outcomes.</li>
+                <li>Developed an internal AI-powered HR sourcing and screening system using CrewAI and AWS Bedrock, featuring specialized agents for JD analysis, resume parsing, candidate-JD gap analysis, and automated interview evaluation - deployed on AWS ECS via Docker, ECR & CloudFront; currently being presented to CTO for organization-wide adoption.</li>
                 <li>Developed a document processing pipeline using FastAPI, OCR, and PDF parsing to automate work-order extraction, reducing processing time from 5–10 hours to under 5 minutes — directly unblocking revenue-critical operational workflows.</li>
-                <li>Architected a reusable Amazon SageMaker MLOps framework for near-AutoML training and inference, with automated retraining, cross-account model sharing, and blue-green deployments, reducing ML workflow onboarding time by 50%.</li>
-                <li>Built Azure DevOps CI/CD release templates for SageMaker pipeline automation, standardizing deployment across environments and enabling production delivery for 10+ data science projects.</li>
-                <li>Standardized dependency management and ensured fully reproducible ML environments by developing custom Docker-based SageMaker container frameworks and storing them in a central ECR registry.</li>
-                <li>Developed an internal Python utility library integrating Snowflake, BigQuery, GCS, and AWS services, accelerating DS experimentation cycles by ~40%.</li>
+                <li>Developed a config-driven SageMaker pipeline framework, cutting DS pipeline setup time by ~90% (1-2 weeks → half a day) by abstracting all SDK work behind a single import..</li>
+                <li>Architected a reusable Amazon SageMaker MLOps framework for near-AutoML training and inference - covering automated retraining, cross-account model sharing, blue-green deployments, Docker-based container frameworks, Azure DevOps CI/CD pipelines, and an internal Python utility library integrating Snowflake, BigQuery, GCS, and AWS services - reducing ML workflow onboarding time by 50%, enabling production delivery for 10+ data science projects, and accelerating DS experimentation cycles by ~40%.</li>
               </ul>
             </div>  
             
@@ -404,11 +408,11 @@
                 <h5 style="text-align:left;">January 2022 - July 2024</h5>
                 <h6 style="text-align:left;color:#07c48b"><em>Machine Learning Engineer</em></h6>
                 <ul style="text-align:left;">
-                  <li>Launched a queue-based RAG Q&A pipeline using Azure OpenAI GPT-3.5, Ada embeddings, LangChain, FAISS, and prompt engineering (zero-shot, few-shot) - reducing enterprise document lookup from 5+ days to minutes and accelerating business decision and contract turnaround cycles.</li>
-                  <li>Developed an end-to-end document detail extraction system using a custom YOLO + OCR + image classification pipeline, achieving 80%+ accuracy; enabled stakeholder validation via a Streamlit app.</li>
-                  <li>Automated document classification and tagging pipeline using SpaCy NER, Elasticsearch, and a classification ML model, achieving 93% field-level accuracy (detail extraction F1: 0.89, document tagging F1: 0.93).</li>
-                  <li>Engineered a resume intelligence engine using SpaCy NER/REL deployed on AWS Lambda, auto-processing 1,000+ resumes/month and eliminating manual screening effort for recruiters.</li>
-                  <li>Built a multimodal recommendation system leveraging pre-trained transformer models to extract embeddings from text, images, video, and audio, using a vector database for scalable similarity retrieval.</li>
+                  <li> Lease Document RAG Assistant: Collaborated with cross-functional teams to develop & deploy a queue-based RAG Q&A pipeline using Azure OpenAI GPT-3.5, Ada embeddings and FAISS that reduced aircraft lease & asset document lookup time from 5+ days to minutes.</li>
+                  <li>ARC Detail Extraction System: Built an end-to-end detail extraction system for aircraft maintenance ARC (EASA/FAA) documents. Experimented with Azure Document Intelligence, then developed a custom pipeline combining YOLO, OCR, and an image classification model, achieving over 80% accuracy and enabling validation via a stakeholder-facing Streamlit app.</li>
+                  <li>Aircraft Maintenance Record Tagging Pipeline: Designed & deployed a document tagging pipeline utilising SpaCy NER for detail extraction from aircraft maintenance records, Elasticsearch to filter, and an ML model to tag the document type, achieving 93% field-level accuracy, detail extraction (F1 score: 0.89) and tagging (F1 score: 0.93).</li>
+                  <li>Resume Intelligence Engine: Engineered a resume parser using SpaCy NER/REL and deployed on AWS Lambda, auto-processing 1,000+ resumes/month across mid-sized firms and eliminating manual review and scoring effort for recruiters.</li>
+                  <li>Multimodal Recommendation Engine POC: Developed a multimodal recommendation system leveraging transformer-based text, audio, and video embeddings for scalable cosine-similarity retrieval.</li>
                 </ul>
               </div>
 
@@ -761,7 +765,7 @@
             <h3>My Address</h3>
             <!-- <p>56, Ward 5</p>
             <p>Brijpur</p> -->
-            <p>Panna (MP), India 488001</p>
+            <p>Pune (MH), India 411014</p>
           </div>
         </div>
 
