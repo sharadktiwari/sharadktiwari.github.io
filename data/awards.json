@@ -1,0 +1,23 @@
+[
+  {
+    "id": "employee-quarter-2026",
+    "title": "Employee of the Quarter",
+    "description": "Recognized for leadership in delivering enterprise AI solutions with measurable business outcomes.",
+    "year": "2026",
+    "icon": "★"
+  },
+  {
+    "id": "diamond-spot-award-2025",
+    "title": "Diamond Spot Award",
+    "description": "Awarded for driving operational efficiency and automation across enterprise workflows.",
+    "year": "2025",
+    "icon": "◆"
+  },
+  {
+    "id": "gold-medal-academic-2022",
+    "title": "Gold Medal for Academic Excellence",
+    "description": "Honored for outstanding academic achievement and applied AI coursework.",
+    "year": "2022",
+    "icon": "🏅"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "enterprise-experience",
+    "title": "Enterprise Experience",
+    "description": "Practical delivery experience with production AI systems and business-critical workflows."
+  },
+  {
+    "id": "business-focused-approach",
+    "title": "Business-Focused Approach",
+    "description": "Every solution is designed for ROI, efficiency and measurable outcomes."
+  },
+  {
+    "id": "production-ready-systems",
+    "title": "Production-Ready Systems",
+    "description": "I prioritize reliability, monitoring and maintainable deployments from day one."
+  },
+  {
+    "id": "cloud-expertise",
+    "title": "Cloud Expertise",
+    "description": "Modern cloud platforms are used to deploy scalable AI solutions securely."
+  },
+  {
+    "id": "fast-delivery",
+    "title": "Fast Delivery",
+    "description": "Rapid prototypes and iterative delivery keep projects moving and reduce risk."
+  },
+  {
+    "id": "transparent-communication",
+    "title": "Transparent Communication",
+    "description": "Clear status updates and realistic timelines are part of every engagement."
+  }
+]

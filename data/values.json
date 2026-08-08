@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ownership",
+    "icon": "🧭",
+    "title": "Ownership",
+    "description": "I take responsibility for outcomes, not just deliverables, and keep projects on track through clear accountability." 
+  },
+  {
+    "id": "transparency",
+    "icon": "🔍",
+    "title": "Transparency",
+    "description": "Honest status updates, clear risks and practical trade-offs are part of every engagement." 
+  },
+  {
+    "id": "curiosity",
+    "icon": "🧠",
+    "title": "Curiosity",
+    "description": "I ask the right questions, explore technical possibilities and challenge assumptions with a business lens." 
+  },
+  {
+    "id": "reliability",
+    "icon": "🔒",
+    "title": "Reliability",
+    "description": "Reliable systems and consistent delivery are how AI keeps earning trust from stakeholders and users." 
+  },
+  {
+    "id": "communication",
+    "icon": "💬",
+    "title": "Communication",
+    "description": "I prioritize clarity in requirements, design decisions and progress updates so teams stay aligned." 
+  },
+  {
+    "id": "continuous-improvement",
+    "icon": "🔁",
+    "title": "Continuous Improvement",
+    "description": "Every release is an opportunity to learn, improve and make the next iteration more reliable and valuable." 
+  }
+]

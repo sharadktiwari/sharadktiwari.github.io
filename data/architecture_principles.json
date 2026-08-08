@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Production Ready",
+    "description": "Design patterns, monitoring, and operational discipline ensure solutions are built for sustained use."
+  },
+  {
+    "title": "Modular Design",
+    "description": "Systems are decomposed into reusable services and components for faster iteration and lower risk."
+  },
+  {
+    "title": "Scalable APIs",
+    "description": "APIs are designed to scale with usage, support parallel workflows, and integrate cleanly with client systems."
+  },
+  {
+    "title": "Cloud Native",
+    "description": "Deployments use cloud infrastructure, containerization, and managed services to reduce operational overhead."
+  },
+  {
+    "title": "Secure by Design",
+    "description": "Data protection, access control, and secure data handling are built into every layer of the solution."
+  },
+  {
+    "title": "Observability",
+    "description": "Logging, metrics, and error tracking give teams visibility into production behavior and regression risk."
+  },
+  {
+    "title": "Reusable Components",
+    "description": "Shared libraries and abstractions reduce duplication and accelerate future product launches."
+  },
+  {
+    "title": "Testing",
+    "description": "Automated test coverage and verification help protect production systems from regressions."
+  }
+]

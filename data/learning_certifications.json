@@ -1,0 +1,42 @@
+[
+  {
+    "id": "aws-ml-associate",
+    "title": "AWS Machine Learning Specialty",
+    "issuer": "Amazon Web Services",
+    "dateRange": "2025",
+    "description": "Certification for designing and deploying machine learning workloads on AWS.",
+    "icon": "☁️"
+  },
+  {
+    "id": "aws-technical-essentials",
+    "title": "AWS Technical Essentials",
+    "issuer": "Amazon Web Services",
+    "dateRange": "2024",
+    "description": "Fundamentals of AWS infrastructure and cloud architecture for AI systems.",
+    "icon": "🛠️"
+  },
+  {
+    "id": "deeplearning-ai",
+    "title": "DeepLearning.AI Specializations",
+    "issuer": "DeepLearning.AI",
+    "dateRange": "2024",
+    "description": "Applied deep learning and ML workflow expertise for production systems.",
+    "icon": "🧠"
+  },
+  {
+    "id": "azure-certifications",
+    "title": "Microsoft Azure Certifications",
+    "issuer": "Microsoft",
+    "dateRange": "2024",
+    "description": "Cloud AI architecture and enterprise platform skills for Azure-based systems.",
+    "icon": "🔷"
+  },
+  {
+    "id": "future-certifications",
+    "title": "Future certifications in progress",
+    "issuer": "Ongoing",
+    "dateRange": "Planned",
+    "description": "Continuing to invest in advanced AI, data engineering and cloud architecture certifications.",
+    "icon": "⏳"
+  }
+]
