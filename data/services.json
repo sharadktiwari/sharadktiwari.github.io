@@ -7,7 +7,7 @@
     "outcomes": ["Reduced support costs", "Faster response times", "Improved customer satisfaction"],
     "deliverables": ["Customer Support Assistant", "Knowledge Assistant", "Internal Chatbot", "Document Chat"],
     "technologies": ["AWS Bedrock", "Azure OpenAI", "LangChain", "Snowflake Cortex"],
-    "duration": "8–12 weeks"
+    "duration": "2–12 weeks"
   },
   {
     "id": "rag-solutions",
@@ -17,7 +17,7 @@
     "outcomes": ["Reduced search time", "Improved knowledge sharing", "Higher employee productivity"],
     "deliverables": ["Enterprise Search", "Document Intelligence", "Policy Assistant", "Contract Search"],
     "technologies": ["RAG", "Vector search", "Knowledge retrieval"],
-    "duration": "6–10 weeks"
+    "duration": "2–10 weeks"
   },
   {
     "id": "agentic-ai",
@@ -27,7 +27,7 @@
     "outcomes": ["Reduced manual effort", "Automated decision support", "Faster operations"],
     "deliverables": ["Research Agents", "Recruitment Agents", "Report Generation", "Approval Workflows"],
     "technologies": ["Serverless automation", "Task orchestration", "LLMs"],
-    "duration": "10–14 weeks"
+    "duration": "2–14 weeks"
   },
   {
     "id": "document-intelligence",
@@ -37,7 +37,7 @@
     "outcomes": ["Reduced manual processing", "Improved data accuracy", "Faster operations"],
     "deliverables": ["Invoice Extraction", "Resume Parsing", "KYC Processing", "Form Digitization"],
     "technologies": ["OCR", "NLP", "Document understanding"],
-    "duration": "6–10 weeks"
+    "duration": "2–10 weeks"
   },
   {
     "id": "machine-learning-solutions",
@@ -47,7 +47,7 @@
     "outcomes": ["Better business decisions", "Higher efficiency", "Data-driven insights"],
     "deliverables": ["Recommendation Engines", "Fraud Detection", "Demand Forecasting", "Predictive Analytics"],
     "technologies": ["ML modeling", "Forecasting", "Anomaly detection"],
-    "duration": "8–14 weeks"
+    "duration": "2–14 weeks"
   },
   {
     "id": "cloud-ai-mlops",
@@ -57,6 +57,6 @@
     "outcomes": ["Reliable deployments", "Scalable infrastructure", "Lower maintenance effort"],
     "deliverables": ["Model Deployment", "CI/CD Pipelines", "Monitoring", "Infrastructure Automation"],
     "technologies": ["AWS", "Azure", "Docker", "MLOps"],
-    "duration": "8–12 weeks"
+    "duration": "2–12 weeks"
   }
 ]
