@@ -1,0 +1,32 @@
+[
+  {
+    "id": "current-role",
+    "question": "What are you currently working on?",
+    "answer": "I work as an AI/ML engineer building production machine learning systems, including generative AI, RAG pipelines, and MLOps workflows for enterprise use cases."
+  },
+  {
+    "id": "tech-stack",
+    "question": "What's your typical tech stack?",
+    "answer": "I work primarily with Python, cloud platforms like AWS and Azure, and tools across the ML lifecycle from data pipelines to model deployment and monitoring."
+  },
+  {
+    "id": "project-scope",
+    "question": "What kinds of projects have you worked on?",
+    "answer": "Production systems spanning document intelligence, workflow automation, and customer-facing AI tools. See the Projects page for specifics on approach and outcomes."
+  },
+  {
+    "id": "collaboration-style",
+    "question": "What kind of role or team are you looking for?",
+    "answer": "I'm open to full-time AI/ML engineering roles where I can work on production systems, ideally with a team that values reliability and measurable impact."
+  },
+  {
+    "id": "learning",
+    "question": "How do you stay current in AI/ML?",
+    "answer": "Through hands-on projects, following research and industry developments closely, and writing about what I learn — see the Insights section for more."
+  },
+  {
+    "id": "contact",
+    "question": "What's the best way to reach you?",
+    "answer": "Email or LinkedIn work best to start — I'm also reachable by phone (see resume) and typically respond the same day."
+  }
+]

@@ -1,77 +1,63 @@
-# Personal Portfolio 🔥
-> https://sharadktiwari.github.io/
+# Sharad Tiwari — Portfolio
 
-:star: Star me on GitHub — it helps!
+Personal portfolio site showcasing my work as a Machine Learning Engineer, built with vanilla JS, HTML, and CSS.
 
-[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/sharadktiwari/sharadktiwari.github.io/commits/master)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://sharadktiwari.github.io/)
-[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/sharadktiwari/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+🔗 **Live site:** [sharadktiwari.github.io](https://sharadktiwari.github.io/)
 
-### Website Preview
-#### Home Page
-<img src="website_images/HomePage.png" width="1915">
+## About
 
+This repo hosts my personal portfolio, covering my experience, projects, technical writing, and background in AI/ML engineering — including Generative AI, RAG, Agentic AI, Computer Vision, and MLOps.
 
-#### About Page
-<img src="website_images/AboutPage.png" width="1884">
+## Pages
 
+| Page | Description |
+|---|---|
+| `index.html` | Home — overview and highlights |
+| `experience.html` | Professional experience, tech stack, certifications, and awards |
+| `case-studies.html` | Selected project write-ups |
+| `blog.html` | Technical articles and notes on AI/ML |
+| `about.html` | Background and contact information |
 
-#### Projects Page
-<img src="website_images/ProjectPage.png" width="1878">
-  
+## Tech Stack
 
+- Vanilla JavaScript (ES modules)
+- HTML5 / CSS3
+- JSON-driven content rendering
+- Hosted on GitHub Pages
 
-:star: Star me on GitHub — it helps!
+## Project Structure
 
-## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
+```
+├── css/              # Stylesheets (layout, typography, components, etc.)
+├── js/
+│   ├── main.js        # Entry point
+│   ├── renderer.js     # Page-specific rendering logic
+│   ├── components/     # Reusable UI component builders
+│   └── utils.js
+├── data/              # JSON content (experience, projects, articles, etc.)
+├── assets/            # Images, resume, and other static files
+└── *.html             # Page templates
+```
 
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> 
-- Add or remove images from `assets/img/` directory as per your requirement.
-- Update the info of `projects` folder according to your need
-- Use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create your own website.
-- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io` and push the generated code to the `master` branch.
+## Local Development
 
-## Sections 📚
-✔️ About\
-✔️ Interests\
-✔️ Education\
-✔️ Online Certification\
-✔️ Experience\
-✔️ Projects \
-✔️ Skills \
-✔️ Resume\
-✔️ Contact Info
+This is a static site with no build step required.
 
+```bash
+git clone https://github.com/sharadktiwari/sharadktiwari.github.io.git
+cd sharadktiwari.github.io
+# Serve locally, e.g.:
+python3 -m http.server
+```
 
+Then open `http://localhost:8000` in your browser.
 
-## Tools Used 🛠️
-* <b>GitHub Pages</b> - To host my static website (HTML, CSS, JS).
+## Contact
 
-## Contributing 💡
-#### Step 1
+- **LinkedIn:** [linkedin.com/in/tiwari-sharad](https://www.linkedin.com/in/tiwari-sharad/)
+- **GitHub:** [github.com/sharadktiwari](https://github.com/sharadktiwari)
+- **Email:** sharadktiwari2000@gmail.com
 
-- **Option 1**
-    - 🍴 Fork this repo!
+---
 
-- **Option 2**
-    - 👯 Clone this repo to your local machine.
-
-
-#### Step 2
-
-- **Build your code** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request.
-
-## License
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+© Sharad Tiwari. All rights reserved.

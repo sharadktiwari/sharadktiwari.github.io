@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Email Consultation",
+    "description": "Send me a note and I'll get back to you within a couple of days.",
+    "icon": "✉️",
+    "url": "mailto:sharadktiwari2000@gmail.com",
+    "linkLabel": "Email Now",
+    "gmailUrl": "https://mail.google.com/mail/?view=cm&fs=1&to=sharadktiwari2000@gmail.com",
+    "outlookUrl": "https://outlook.live.com/mail/0/deeplink/compose?to=sharadktiwari2000@gmail.com"
+  },
+  {
+    "title": "Schedule a Call",
+    "description": "Book a time to chat about a role, a project, or just to connect.",
+    "icon": "📅",
+    "url": "https://calendly.com/sharadktiwari2000/ai-consultation",
+    "linkLabel": "Book a Call"
+  },
+  {
+    "title": "LinkedIn",
+    "description": "Connect on LinkedIn to review experience, case studies and collaboration fit.",
+    "icon": "🔗",
+    "url": "https://www.linkedin.com/in/tiwari-sharad/",
+    "linkLabel": "Visit Profile"
+  }
+]

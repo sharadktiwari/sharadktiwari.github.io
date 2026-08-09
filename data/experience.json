@@ -1,0 +1,86 @@
+[
+  {
+    "id": "jet2-travel-technologies",
+    "company": "Jet2 Travel Technologies (Jet2 PLC)",
+    "role": "Senior Machine Learning Engineer",
+    "location": "Pune, MH, India",
+    "dateRange": "July 2024 – Present",
+    "summary": "Building enterprise-scale AI platforms, Generative AI applications and MLOps infrastructure supporting production customer operations.",
+    "outcomes": [
+      "Automated intent classification for 2,000+ customer interactions per day.",
+      "Reduced manual categorization effort by 80%.",
+      "Built a real-time complaint intelligence platform.",
+      "Reduced document processing from hours to minutes.",
+      "Standardized enterprise MLOps onboarding."
+    ],
+    "technologies": [
+      "AWS Bedrock",
+      "Snowflake Cortex AI",
+      "Amazon SageMaker",
+      "FastAPI",
+      "Docker",
+      "AWS Lambda",
+      "SNS",
+      "SQS",
+      "Azure DevOps",
+      "OCR",
+      "Mistral",
+      "AI Agents",
+      "AWS Botocore"
+    ],
+    "logo": "JT"
+  },
+  {
+    "id": "codiant-yash-technologies",
+    "company": "Codiant – A Yash Technologies Company",
+    "role": "Machine Learning Engineer",
+    "location": "Indore, MP, India",
+    "dateRange": "January 2022 – July 2024",
+    "summary": "Delivered AI-powered document intelligence, retrieval systems and recommendation engines across enterprise clients.",
+    "outcomes": [
+      "Delivered an enterprise-grade RAG system.",
+      "Built a resume intelligence platform for faster hiring decisions.",
+      "Automated OCR workflows to remove manual data extraction.",
+      "Improved recommendation relevance with NLP pipelines.",
+      "Enabled reusable retrieval services across multiple engagements."
+    ],
+    "technologies": [
+      "Azure OpenAI",
+      "LangChain",
+      "FAISS",
+      "YOLO",
+      "spaCy",
+      "OCR",
+      "AWS Lambda",
+      "Elasticsearch",
+      "FastAPI",
+      "Docker",
+      "ML / DL",
+      "NLP"
+    ],
+    "logo": "CY"
+  },
+  {
+    "id": "pojo-software",
+    "company": "Pojo Software",
+    "role": "Quantitative Developer",
+    "location": "Remote",
+    "dateRange": "September 2021 – January 2022",
+    "summary": "Worked on quantitative analysis and algorithmic trading research for finance and operations teams.",
+    "outcomes": [
+      "Developed statistical models for trading strategy evaluation.",
+      "Built portfolio optimization analysis tools.",
+      "Delivered research insights used by senior analytics stakeholders."
+    ],
+    "technologies": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scipy",
+      "Matplotlib",
+      "Statistics",
+      "SQL"
+    ],
+    "logo": "P"
+  }
+]
