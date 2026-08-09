@@ -344,7 +344,7 @@ async function renderContactIndustries() {
 async function renderContactFaq() {
   const placeholder = document.querySelector('[data-json="contactFaq"]');
   if (!placeholder) return;
-  const faqs = await loadJSON('data/faq_contact.json');
+  const faqs = await loadJSON('data/faq.json');
   if (!faqs) return;
 
   placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
@@ -540,7 +540,6 @@ async function renderBlog() {
   await renderFeaturedArticles();
   await renderBrowseTopics();
   await renderLatestArticles();
-  await renderPopularReads();
   await renderInsightsCta();
 }
 
@@ -671,49 +670,18 @@ async function renderLatestArticles() {
   controls.querySelector('.article-sort-select').addEventListener('change', () => filterArticleCards({}));
 }
 
-async function renderPopularReads() {
-  const placeholder = document.querySelector('[data-json="popularReads"]');
-  if (!placeholder) return;
-  const articles = await loadJSON('data/blogs.json');
-  if (!articles) return;
-
-  const popular = articles.slice().sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate)).slice(0, 4);
-
-  placeholder.appendChild(createElement('div', { className: 'section-heading' }, [
-    createElement('p', { className: 'eyebrow-label' }, ['Recommended Reads']),
-    createElement('h2', {}, ['A focused selection of practical AI engineering topics.'])
-  ]));
-
-  const grid = createElement('div', { className: 'section-grid grid-4 popular-grid' }, popular.map((article) => {
-    const card = createElement('article', { className: 'card scale-up popular-card' }, [
-      createElement('h3', {}, [article.title]),
-      createElement('p', { className: 'article-summary' }, [article.summary]),
-      createElement('div', { className: 'article-meta' }, [
-        createElement('span', {}, [`${article.readingTime || '5 min'} • ${article.publishedDate || ''}`]),
-        createElement('br'),
-        createElement('span', {}, [article.category || 'AI'])
-      ]),
-      createElement('div', { className: 'article-tags' }, (article.tags || []).map((tag) => createElement('span', { className: 'skill-badge' }, [tag]))),
-      createElement('a', { className: 'btn btn-secondary', href: article.url || '#', role: 'link' }, ['Read More'])
-    ]);
-    return card;
-  }));
-
-  placeholder.appendChild(grid);
-}
-
 async function renderInsightsCta() {
   const placeholder = document.querySelector('[data-json="insightsCta"]');
   if (!placeholder) return;
 
   placeholder.appendChild(createElement('div', { className: 'cta-shell card scale-up' }, [
     createElement('div', {}, [
-      createElement('p', { className: 'eyebrow-label' }, ['Looking for AI Expertise Beyond Tutorials?']),
-      createElement('h2', {}, ['If you are planning an AI initiative or need help building production-ready AI systems, let’s discuss your project.'])
+      createElement('p', { className: 'eyebrow-label' }, ['Interested in more than the write-up?']),
+      createElement('h2', {}, ['If you\'d like to talk through the technical details, my experience, or a potential opportunity, feel free to reach out.'])
     ]),
     createElement('div', { className: 'cta-actions' }, [
-      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Book Consultation']),
-      createElement('a', { className: 'btn btn-secondary', href: 'services.html' }, ['Explore Services'])
+      createElement('a', { className: 'btn btn-primary', href: 'about.html' }, ['Get in Touch']),
+      createElement('a', { className: 'btn btn-secondary', href: 'experience.html' }, ['View Experience'])
     ])
   ]));
 }

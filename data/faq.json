@@ -1,32 +1,32 @@
 [
   {
-    "id": "project-duration",
-    "question": "How long does an AI project take?",
-    "answer": "Typical AI engagements range from four to twelve weeks depending on scope, data readiness and production requirements. Early discovery helps identify an efficient path to impact."
+    "id": "current-role",
+    "question": "What are you currently working on?",
+    "answer": "I work as an AI/ML engineer building production machine learning systems, including generative AI, RAG pipelines, and MLOps workflows for enterprise use cases."
   },
   {
-    "id": "software-integration",
-    "question": "Can AI integrate with existing software?",
-    "answer": "Yes. I design solutions to connect with existing systems using APIs, serverless functions and secure integration layers."
+    "id": "tech-stack",
+    "question": "What's your typical tech stack?",
+    "answer": "I work primarily with Python, cloud platforms like AWS and Azure, and tools across the ML lifecycle from data pipelines to model deployment and monitoring."
   },
   {
-    "id": "startups",
-    "question": "Do you work with startups?",
-    "answer": "Absolutely. I help startups validate AI use cases, build MVPs and scale production systems with a focus on business outcomes."
+    "id": "project-scope",
+    "question": "What kinds of projects have you worked on?",
+    "answer": "Production systems spanning document intelligence, workflow automation, and customer-facing AI tools. See the Projects page for specifics on approach and outcomes."
   },
   {
-    "id": "cloud-deployment",
-    "question": "Can you deploy to AWS or Azure?",
-    "answer": "Yes. I have experience deploying production AI systems on AWS and Azure, including serverless APIs, managed model services and monitoring."
+    "id": "collaboration-style",
+    "question": "What kind of role or team are you looking for?",
+    "answer": "I'm open to full-time AI/ML engineering roles where I can work on production systems, ideally with a team that values reliability and measurable impact."
   },
   {
-    "id": "internal-tools",
-    "question": "Can you build internal AI tools?",
-    "answer": "Yes. I build internal assistants, document search tools and workflow automation that support teams across operations, support and analytics."
+    "id": "learning",
+    "question": "How do you stay current in AI/ML?",
+    "answer": "Through hands-on projects, following research and industry developments closely, and writing about what I learn — see the Insights section for more."
   },
   {
-    "id": "post-launch-support",
-    "question": "Do you provide post-launch support?",
-    "answer": "Yes. Support can include monitoring, tuning, retraining plans and lightweight maintenance to keep the system performing in production."
+    "id": "contact",
+    "question": "What's the best way to reach you?",
+    "answer": "Email or LinkedIn both work well — I usually respond within a couple of days."
   }
 ]

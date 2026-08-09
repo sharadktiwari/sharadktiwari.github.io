@@ -1,8 +1,8 @@
 {
-  "headline": "Building AI That Solves Real Business Problems",
+  "headline": "Building AI Systems That Solve Real Problems",
   "summary": "I'm Sharad Tiwari, a Machine Learning Engineer with 5+ years of experience designing and deploying production-grade AI systems across Generative AI, Machine Learning, Computer Vision and MLOps.",
   "heroButtons": [
-    { "label": "Download Resume", "href": "assets/files/Sharad_Tiwari_MLE.pdf", "type": "primary" },
+    { "label": "Download Resume", "href": "https://docs.google.com/document/d/1dzqbKcSeHdI9XFynen9i3E3XuwpRtFky/edit?usp=drive_link&ouid=117566476688621557296&rtpof=true&sd=true", "type": "primary" },
     { "label": "LinkedIn", "href": "https://www.linkedin.com/in/sharad-tiwari/", "type": "secondary", "external": true },
     { "label": "GitHub", "href": "https://github.com/sharadktiwari", "type": "secondary", "external": true }
   ],
