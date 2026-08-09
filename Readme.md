@@ -1,69 +1,63 @@
-# Sharad Tiwari Portfolio
+# Sharad Tiwari — Portfolio
 
-## Overview
-This repository contains the foundation for a premium AI consulting portfolio website built with static HTML, CSS, and vanilla JavaScript.
+Personal portfolio site showcasing my work as a Machine Learning Engineer, built with vanilla JS, HTML, and CSS.
 
-The architecture follows a strict separation of concerns:
-- `index.html`, `services.html`, `experience.html`, `case-studies.html`, `projects.html`, `blog.html`, `about.html` — page templates (contact merged into About).
-- `css/` — modular styling, variables, layout, typography, components, animations, utilities, responsive rules.
-- `js/` — ES6 modules with clear feature responsibilities.
-- `js/components/` — reusable DOM component constructors.
-- `data/` — JSON-driven content schemas.
-- `assets/` — asset directories for images, icons, logos, videos, and diagrams.
-- `favicon/` — placeholder folder for favicon assets.
+🔗 **Live site:** [sharadktiwari.github.io](https://sharadktiwari.github.io/)
 
-## Architecture
-### HTML
-Each page is a lightweight shell with a shared navigation and footer rendered by JavaScript.
+## About
 
-### CSS
-Styles are organized into:
-- `variables.css`
-- `reset.css`
-- `layout.css`
-- `typography.css`
-- `components.css`
-- `animations.css`
-- `utilities.css`
-- `responsive.css`
+This repo hosts my personal portfolio, covering my experience, projects, technical writing, and background in AI/ML engineering — including Generative AI, RAG, Agentic AI, Computer Vision, and MLOps.
 
-### JavaScript
-JavaScript responsibilities are separated into:
-- `config.js` — site metadata and navigation configuration.
-- `utils.js` — generic helpers for DOM creation, JSON loading, and scroll behavior.
-- `navigation.js` — mobile menu, sticky header, and navigation interactions.
-- `animations.js` — reveal-on-scroll and animation utilities.
-- `modal.js` — modal open/close behavior.
-- `renderer.js` — JSON rendering scaffolding.
-- `github.js` — GitHub-specific helpers.
-- `contact.js` — contact form and validation hooks.
-- `js/components/` — reusable component constructors.
+## Pages
 
-### JSON
-The `data/` folder stores schema-driven content for:
-- projects
-- services
-- experience
-- blogs
-- testimonials
-- certifications
-- achievements
+| Page | Description |
+|---|---|
+| `index.html` | Home — overview and highlights |
+| `experience.html` | Professional experience, tech stack, certifications, and awards |
+| `case-studies.html` | Selected project write-ups |
+| `blog.html` | Technical articles and notes on AI/ML |
+| `about.html` | Background and contact information |
 
-## Getting Started
-1. Open the `portfolio` folder in your editor.
-2. Serve the site from a static server or GitHub Pages.
-3. Update `js/config.js` with the live site settings.
-4. Add content to the JSON files in `data/`.
-5. Build page sections by rendering JSON data through `js/renderer.js`.
+## Tech Stack
 
-## Development Notes
-- No framework is used.
-- No inline CSS or inline JavaScript.
-- All page content can be driven from `data/*.json`.
-- The structure is designed for future additions like blog articles, case studies, and public projects.
+- Vanilla JavaScript (ES modules)
+- HTML5 / CSS3
+- JSON-driven content rendering
+- Hosted on GitHub Pages
 
-## Next Steps
-- Implement shared navigation rendering in `js/components/navbar.js`.
-- Add footer content in `js/components/footer.js`.
-- Build out page-specific renderers for services, projects, and experience.
-- Add favicon assets and SEO metadata as part of production deployment.
+## Project Structure
+
+```
+├── css/              # Stylesheets (layout, typography, components, etc.)
+├── js/
+│   ├── main.js        # Entry point
+│   ├── renderer.js     # Page-specific rendering logic
+│   ├── components/     # Reusable UI component builders
+│   └── utils.js
+├── data/              # JSON content (experience, projects, articles, etc.)
+├── assets/            # Images, resume, and other static files
+└── *.html             # Page templates
+```
+
+## Local Development
+
+This is a static site with no build step required.
+
+```bash
+git clone https://github.com/sharadktiwari/sharadktiwari.github.io.git
+cd sharadktiwari.github.io
+# Serve locally, e.g.:
+python3 -m http.server
+```
+
+Then open `http://localhost:8000` in your browser.
+
+## Contact
+
+- **LinkedIn:** [linkedin.com/in/tiwari-sharad](https://www.linkedin.com/in/tiwari-sharad/)
+- **GitHub:** [github.com/sharadktiwari](https://github.com/sharadktiwari)
+- **Email:** sharadktiwari2000@gmail.com
+
+---
+
+© Sharad Tiwari. All rights reserved.
