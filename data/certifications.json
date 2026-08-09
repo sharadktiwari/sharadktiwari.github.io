@@ -5,7 +5,7 @@
     "description": "Obtained AWS Artificial Intelligence Practitioner, covering AWS AI/GenAI/Agentic AI services.",
     "year": "2026",
     "icon": "🎓",
-    "issuer": "AWS"
+    "issuer": "AWS Skill Builder"
   },
   {
     "id": "aws-ml-associate",
@@ -13,7 +13,7 @@
     "description": "Obtained AWS ML Engineer Associate, covering AWS ML/DL/AI services.",
     "year": "2025",
     "icon": "🎓",
-    "issuer": "AWS"
+    "issuer": "AWS Skill Builder"
   },
   {
     "id": "aws-cloud-practitioner",
@@ -21,7 +21,7 @@
     "description": "Obtained AWS Cloud Practitioner, covering AWS services (S3, Lambda, VPC, SG, ECS, EKS, RDS, etc).",
     "year": "2025",
     "icon": "🎓",
-    "issuer": "AWS"
+    "issuer": "AWS Skill Builder"
   },
   {
     "id": "dl-specialization",

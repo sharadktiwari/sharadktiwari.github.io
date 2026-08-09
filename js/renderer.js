@@ -20,12 +20,12 @@ import { loadMarkdown, markdownToHtml } from './markdown.js';
 
 const renderMap = {
   about: renderAbout,
-  services: renderServices,
+  // services: renderServices,
   experience: renderExperience,
   'case-studies': renderCaseStudies,
   blog: renderBlog,
   article: renderArticle,
-  contact: renderContact
+  // contact: renderContact
 };
 
 export async function initializeRenderer() {

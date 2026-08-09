@@ -7,7 +7,7 @@ export const siteConfig = {
   resumeUrl: './assets/files/Sharad_Tiwari_MLE.pdf',
   navigation: [
     { label: 'Home', href: 'index.html' },
-    { label: 'Services', href: 'services.html' },
+    // { label: 'Services', href: 'services.html' },
     { label: 'Experience', href: 'experience.html' },
     { label: 'Case Studies', href: 'case-studies.html' },
     { label: 'AI Engineering Insights', href: 'blog.html' },
